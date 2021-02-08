@@ -1,0 +1,36 @@
+name = "Survivor winner pick"
+
+[[extensionPoints]]
+id = "Watch::Series::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
+
+[[extensionPoints]]
+id = "Watch::Season::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
+
+[[extensionPoints]]
+id = "Watch::WatchThrough::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
+
+[userConfiguration]
+[userConfiguration.schema]
+
+# What episode must the user make their winner pick by?
+[userConfiguration.schema.pickBy]
+type = "Number"
+default = 2
+label.translation = "configuration.pickBy.label"
+
+# Should you be able to change your winner pick after the fact?
+[userConfiguration.schema.allowChanges]
+type = "Options"
+default = "disallow"
+options = [
+  { value = "disallow", label.translation = "configuration.allowChanges.disallow" },
+  { value = "allow", label.translation = "configuration.allowChanges.allow" },
+  { value = "untilVotedOut", label.translation = "configuration.allowChanges.untilVotedOut" },
+]
+label.translation = "configuration.allowChanges.label"

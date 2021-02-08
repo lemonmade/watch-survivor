@@ -1,0 +1,13 @@
+{
+  "configuration": {
+    "pickBy": {
+      "label": "The episode by which you need to make a winner pick"
+    },
+    "allowChanges": {
+      "label": "Allow changes to your winner pick",
+      "allow": "Allowed",
+      "disallow": "Disallowed",
+      "untilVotedOut": "Allow until voted out"
+    }
+  }
+}

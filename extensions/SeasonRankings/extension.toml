@@ -1,0 +1,16 @@
+name = "Survivor season rankings"
+
+[[extensionPoints]]
+id = "Watch::Series::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
+
+[[extensionPoints]]
+id = "Watch::Season::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
+
+[[extensionPoints]]
+id = "Watch::WatchThrough::Details"
+[[extensionPoints.conditions]]
+series = "gid://Watch/Series/abc"
