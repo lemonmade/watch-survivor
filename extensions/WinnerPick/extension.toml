@@ -16,16 +16,17 @@ id = "Watch::WatchThrough::Details"
 series = "gid://Watch/Series/abc"
 
 [userConfiguration]
-[userConfiguration.schema]
 
 # What episode must the user make their winner pick by?
-[userConfiguration.schema.pickBy]
+[[userConfiguration.schema]]
+key = "pickBy"
 type = "Number"
 default = 2
 label.translation = "configuration.pickBy.label"
 
 # Should you be able to change your winner pick after the fact?
-[userConfiguration.schema.allowChanges]
+[[userConfiguration.schema]]
+key = "allowChanges"
 type = "Options"
 default = "disallow"
 options = [
