@@ -3,17 +3,17 @@ name = "Survivor winner pick"
 [[extensionPoints]]
 id = "Watch::Series::Details"
 [[extensionPoints.conditions]]
-series = "gid://Watch/Series/abc"
+series = "gid://watch/Series/4bacc15b-0a69-4bf5-ad90-dd52113b667d"
 
 [[extensionPoints]]
 id = "Watch::Season::Details"
 [[extensionPoints.conditions]]
-series = "gid://Watch/Series/abc"
+series = "gid://watch/Series/4bacc15b-0a69-4bf5-ad90-dd52113b667d"
 
 [[extensionPoints]]
 id = "Watch::WatchThrough::Details"
 [[extensionPoints.conditions]]
-series = "gid://Watch/Series/abc"
+series = "gid://watch/Series/4bacc15b-0a69-4bf5-ad90-dd52113b667d"
 
 [userConfiguration]
 
