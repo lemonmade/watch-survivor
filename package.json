@@ -5,6 +5,7 @@
   "author": "Chris Sauve <chrismsauve@gmail.com>",
   "scripts": {
     "build": "watchapp build",
+    "dev": "watchapp dev",
     "deploy": "watchapp deploy",
     "type-check": "tsc --build --pretty"
   },
@@ -14,10 +15,10 @@
     ]
   },
   "dependencies": {
-    "@watching/clips-react": "^0.0.4"
+    "@watching/clips-react": "^0.1.0"
   },
   "devDependencies": {
-    "@watching/cli": "^0.0.3",
+    "@watching/cli": "^0.2.1",
     "typescript": "^4.1.3"
   }
 }

@@ -1,5 +1,11 @@
-import {Text} from '@watching/clips-react';
+import {View, useApi} from '@watching/clips-react';
 
 export function WinnerPick() {
-  return <Text>Winner pick!</Text>
+  return (
+    <View>
+      {Object.entries(useApi()).map(([key, value]) => <View key={key}>
+        {key}: {JSON.stringify(value)}
+      </View>)}
+    </View>
+  )
 }
