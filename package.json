@@ -6,7 +6,7 @@
   "scripts": {
     "build": "watchapp build",
     "dev": "watchapp dev",
-    "deploy": "watchapp deploy",
+    "deploy": "watchapp deploy && watchapp publish",
     "type-check": "tsc --build --pretty"
   },
   "workspaces": {
