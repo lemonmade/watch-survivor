@@ -6,7 +6,7 @@
   "scripts": {
     "build": "watchapp build",
     "dev": "watchapp dev",
-    "deploy": "watchapp deploy && watchapp publish",
+    "publish": "watchapp push && watchapp publish",
     "type-check": "tsc --build --pretty"
   },
   "workspaces": {
@@ -15,10 +15,10 @@
     ]
   },
   "dependencies": {
-    "@watching/clips-react": "^0.1.0"
+    "@watching/clips-react": "^0.1.1"
   },
   "devDependencies": {
-    "@watching/cli": "^0.2.1",
+    "@watching/cli": "^0.3.1",
     "typescript": "^4.1.3"
   }
 }

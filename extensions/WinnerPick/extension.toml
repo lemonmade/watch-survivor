@@ -20,14 +20,14 @@ series = "gid://watch/Series/4bacc15b-0a69-4bf5-ad90-dd52113b667d"
 # What episode must the user make their winner pick by?
 [[userConfiguration.schema]]
 key = "pickBy"
-type = "Number"
+type = "number"
 default = 2
 label.translation = "configuration.pickBy.label"
 
 # Should you be able to change your winner pick after the fact?
 [[userConfiguration.schema]]
 key = "allowChanges"
-type = "Options"
+type = "options"
 default = "disallow"
 options = [
   { value = "disallow", label.translation = "configuration.allowChanges.disallow" },
