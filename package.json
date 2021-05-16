@@ -5,7 +5,7 @@
   "author": "Chris Sauve <chrismsauve@gmail.com>",
   "scripts": {
     "build": "watchapp build",
-    "dev": "watchapp dev",
+    "dev": "watchapp develop",
     "publish": "watchapp push && watchapp publish",
     "type-check": "tsc --build --pretty"
   },

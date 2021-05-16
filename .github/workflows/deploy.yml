@@ -1,0 +1,43 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+        name: Checkout
+
+      - uses: actions/setup-node@v1
+        name: Setup node.js and yarn
+        with:
+          node-version: 16.1.0
+
+      - name: Get yarn cache directory
+        id: yarn-cache-get-dir
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v1
+        id: yarn-cache
+        name: Restore yarn cache
+        with:
+          path: ${{ steps.yarn-cache-get-dir.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Yarn install
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn run build
+
+      - name: Publish
+        run: yarn run publish
+        env:
+          WATCH_ACCESS_TOKEN: ${{ secrets.WATCH_ACCESS_TOKEN }}

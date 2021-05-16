@@ -1,3 +1,2 @@
-id = "gid://watch/App/d89e6445-613e-4150-8fa9-4c4d8efae85d"
 name = "Survivor"
 extensions = ["extensions/*"]
