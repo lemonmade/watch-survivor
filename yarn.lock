@@ -1523,9 +1523,9 @@
     "@types/yargs-parser" "*"
 
 "@watching/cli@^0.3.1":
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/@watching/cli/-/cli-0.3.8.tgz#1c7a729689c25b63cc6ad4809d7c928d5c00321f"
-  integrity sha512-/AUBkKG79zWsAEjWERBluMCMG2QKJLXEVHR25TLdROb0aV3z8sgZZ90a6yI0CivHziUBxN0uhupdLE8P56pUkg==
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@watching/cli/-/cli-0.3.9.tgz#a844f7e4d6983acc194aac7885fa0a2a5b0c273f"
+  integrity sha512-QBNixL9AOqQF2QTQOkU4pRezmQsJw1gGmxnTAm+uWwMK2XI9Y6R4zizOxWKTp/IfXaHGVwLb5LXdsZRr2vrgJA==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
