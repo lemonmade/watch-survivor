@@ -1,16 +1,19 @@
 name = "Survivor season rankings"
 
 [[extensionPoints]]
-id = "Watch::Series::Details"
+id = "Series.Details.RenderAccessory"
+module = "SeriesDetails.tsx"
 [[extensionPoints.conditions]]
 series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
 
 [[extensionPoints]]
-id = "Watch::Season::Details"
+id = "Season.Details.RenderAccessory"
+module = "SeasonDetails.tsx"
 [[extensionPoints.conditions]]
 series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
 
 [[extensionPoints]]
-id = "Watch::WatchThrough::Details"
+id = "WatchThrough.Details.RenderAccessory"
+module = "WatchThroughDetails.tsx"
 [[extensionPoints.conditions]]
 series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
