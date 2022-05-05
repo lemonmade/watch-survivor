@@ -1,12 +1,15 @@
 {
-  "files": [],
-  "include": [],
+  "extends": "@quilted/typescript/workspace.json",
+  "include": ["graphql.config.ts", "quilt.workspace.ts", "**/quilt.project.ts"],
+  "compilerOptions": {
+    "outDir": "build/typescript/workspace"
+  },
   "references": [
     {
       "path": "./extensions/SeasonRankings"
     },
     {
       "path": "./extensions/WinnerPick"
-    },
+    }
   ]
 }

@@ -5,10 +5,12 @@ export function WinnerPick() {
 
   return (
     <View>
-      {Object.entries(useApi()).map(([key, value]) => <View key={key}>
-        {key}: {JSON.stringify(value)}
-      </View>)}
+      {Object.entries(useApi()).map(([key, value]) => (
+        <View key={key}>
+          {key}: {JSON.stringify(value)}
+        </View>
+      ))}
       <View>configuration: {JSON.stringify(configuration)}</View>
     </View>
-  )
+  );
 }

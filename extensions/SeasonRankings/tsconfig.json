@@ -1,8 +1,10 @@
 {
-  "extends": "../../config/typescript/tsconfig.base.json",
+  "extends": "@quilted/typescript/app.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "build/ts"
-  }
+    "outDir": "build/typescript"
+  },
+  "include": ["**/*"],
+  "exclude": ["./build", "./quilt.project.ts"]
 }

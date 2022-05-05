@@ -2,21 +2,21 @@ name = "Survivor winner pick"
 
 [[extensionPoints]]
 id = "Series.Details.RenderAccessory"
-module = "SeriesDetails.tsx"
+module = "features/SeriesDetails.tsx"
 [[extensionPoints.conditions]]
-series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
+series.handle = "survivor"
 
 [[extensionPoints]]
 id = "Season.Details.RenderAccessory"
-module = "SeasonDetails.tsx"
+module = "features/SeasonDetails.tsx"
 [[extensionPoints.conditions]]
-series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
+series.handle = "survivor"
 
 [[extensionPoints]]
 id = "WatchThrough.Details.RenderAccessory"
-module = "WatchThroughDetails.tsx"
+module = "features/WatchThroughDetails.tsx"
 [[extensionPoints.conditions]]
-series = "gid://watch/Series/96231fe2-2015-4685-888e-5a1eff501189"
+series.handle = "survivor"
 
 [userConfiguration]
 
