@@ -18,18 +18,18 @@ module = "features/WatchThroughDetails.tsx"
 [[extensionPoints.conditions]]
 series.handle = "survivor"
 
-[userConfiguration]
+[configuration]
 
 # What episode must the user make their winner pick by?
-[[userConfiguration.schema]]
-key = "pickBy"
+[[configuration.schema]]
+id = "pickBy"
 type = "number"
 default = 2
 label.translation = "configuration.pickBy.label"
 
 # Should you be able to change your winner pick after the fact?
-[[userConfiguration.schema]]
-key = "allowChanges"
+[[configuration.schema]]
+id = "allowChanges"
 type = "options"
 default = "disallow"
 options = [

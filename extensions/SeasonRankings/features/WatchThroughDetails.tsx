@@ -7,7 +7,7 @@ export default render<'WatchThrough.Details.RenderAccessory'>(() => (
 function WatchThroughDetails() {
   return (
     <Text>
-      Season rankings! (rendered at {new Date().toLocaleTimeString()})
+      Season rankings!!! (rendered at {new Date().toLocaleTimeString()})
     </Text>
   );
 }

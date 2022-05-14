@@ -1,0 +1,22 @@
+name = "survivor-watch"
+zone_id = "e95e77aca78f37bec01a1473c5947e8d"
+route = "survivor.watch/*"
+workers_dev = true
+
+type = "javascript"
+
+[build]
+command = "cd .. && pnpm quilt build"
+
+[build.upload]
+format = "modules"
+dir = "./build/server"
+main = "./index.mjs"
+
+[site]
+bucket = "./build/assets"
+entry-point = "."
+
+kv_namespaces = [
+  { binding = "SURVIVOR", id = "e4ea0a087fac4d94900bf75c77aac795" },
+]

@@ -7,7 +7,7 @@ export default render<'Series.Details.RenderAccessory'>(() => (
 function SeriesDetails() {
   return (
     <Text>
-      Season rankings! (rendered at {new Date().toLocaleTimeString()})
+      Season rankings!!! (rendered at {new Date().toLocaleTimeString()})
     </Text>
   );
 }
