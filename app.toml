@@ -1,2 +1,3 @@
 name = "Survivor"
+handle = "survivor"
 extensions = ["extensions/*"]

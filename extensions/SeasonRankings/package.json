@@ -3,7 +3,10 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@watching/clips-react": "^0.2.2"
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@watching/clips-react": "^0.2.14",
+    "react": "npm:@quilted/react@^17.0.0",
+    "react-dom": "npm:@quilted/react-dom@^17.0.0"
   }
 }

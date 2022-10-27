@@ -1,5 +1,5 @@
 {
-  "configuration": {
+  "settings": {
     "pickBy": {
       "label": "The episode by which you need to make a winner pick"
     },

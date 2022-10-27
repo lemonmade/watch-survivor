@@ -1,6 +1,6 @@
-import {render, Text} from '@watching/clips-react';
+import {extension, Text} from '@watching/clips-react';
 
-export default render<'WatchThrough.Details.RenderAccessory'>(() => (
+export default extension<'WatchThrough.Details.RenderAccessory'>(() => (
   <WatchThroughDetails />
 ));
 

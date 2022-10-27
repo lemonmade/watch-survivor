@@ -1,6 +1,6 @@
-import {render, Text} from '@watching/clips-react';
+import {extension, Text} from '@watching/clips-react';
 
-export default render<'Season.Details.RenderAccessory'>(() => (
+export default extension<'Season.Details.RenderAccessory'>(() => (
   <SeasonDetails />
 ));
 

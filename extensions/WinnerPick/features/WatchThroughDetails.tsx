@@ -1,10 +1,6 @@
-import {render} from '@watching/clips-react';
-import {WinnerPick} from '../components/WinnerPick';
+import {extension} from '@watching/clips-react';
+import {WinnerPick} from './WinnerPick';
 
-export default render<'WatchThrough.Details.RenderAccessory'>(() => (
-  <WatchThroughDetails />
+export default extension<'WatchThrough.Details.RenderAccessory'>(() => (
+  <WinnerPick />
 ));
-
-function WatchThroughDetails() {
-  return <WinnerPick />;
-}

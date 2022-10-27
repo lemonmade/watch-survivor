@@ -1,10 +1,6 @@
-import {render} from '@watching/clips-react';
-import {WinnerPick} from '../components/WinnerPick';
+import {extension} from '@watching/clips-react';
+import {WinnerPick} from './WinnerPick';
 
-export default render<'Season.Details.RenderAccessory'>(() => (
-  <SeasonDetails />
+export default extension<'Season.Details.RenderAccessory'>(() => (
+  <WinnerPick />
 ));
-
-function SeasonDetails() {
-  return <WinnerPick />;
-}

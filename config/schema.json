@@ -1,0 +1,170 @@
+{
+  "$ref": "#/definitions/LocalExtensionConfiguration",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ExtensionPoint": {
+      "enum": [
+        "Season.Details.RenderAccessory",
+        "Series.Details.RenderAccessory",
+        "WatchThrough.Details.RenderAccessory"
+      ],
+      "type": "string"
+    },
+    "LocalExtensionConfiguration": {
+      "additionalProperties": false,
+      "properties": {
+        "extends": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "conditions": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "series": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "handle": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "module": {
+                "type": "string"
+              },
+              "target": {
+                "$ref": "#/definitions/ExtensionPoint"
+              }
+            },
+            "required": ["target", "module"],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "settings": {
+          "additionalProperties": false,
+          "properties": {
+            "fields": {
+              "items": {
+                "anyOf": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "default": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/LocalExtensionConfigurationString"
+                      },
+                      "type": {
+                        "const": "string",
+                        "type": "string"
+                      }
+                    },
+                    "required": ["type", "id", "label"],
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "default": {
+                        "type": "number"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/LocalExtensionConfigurationString"
+                      },
+                      "type": {
+                        "const": "number",
+                        "type": "string"
+                      }
+                    },
+                    "required": ["type", "id", "label"],
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "default": {
+                        "type": "string"
+                      },
+                      "id": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/LocalExtensionConfigurationString"
+                      },
+                      "options": {
+                        "items": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "label": {
+                              "$ref": "#/definitions/LocalExtensionConfigurationString"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": ["value", "label"],
+                          "type": "object"
+                        },
+                        "type": "array"
+                      },
+                      "type": {
+                        "const": "options",
+                        "type": "string"
+                      }
+                    },
+                    "required": ["type", "id", "label", "options"],
+                    "type": "object"
+                  }
+                ]
+              },
+              "type": "array"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "required": ["name", "handle", "extends"],
+      "type": "object"
+    },
+    "LocalExtensionConfigurationString": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "translation": {
+              "type": "string"
+            }
+          },
+          "required": ["translation"],
+          "type": "object"
+        }
+      ]
+    }
+  }
+}

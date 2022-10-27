@@ -1,40 +1,40 @@
 name = "Survivor winner pick"
+handle = "survivor-winner-pick"
 
-[[extensionPoints]]
-id = "Series.Details.RenderAccessory"
-module = "features/SeriesDetails.tsx"
-[[extensionPoints.conditions]]
+[[extends]]
+target = "Series.Details.RenderAccessory"
+module = "./features/SeriesDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
 
-[[extensionPoints]]
-id = "Season.Details.RenderAccessory"
-module = "features/SeasonDetails.tsx"
-[[extensionPoints.conditions]]
+[[extends]]
+target = "Season.Details.RenderAccessory"
+module = "./features/SeasonDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
 
-[[extensionPoints]]
-id = "WatchThrough.Details.RenderAccessory"
-module = "features/WatchThroughDetails.tsx"
-[[extensionPoints.conditions]]
+[[extends]]
+target = "WatchThrough.Details.RenderAccessory"
+module = "./features/WatchThroughDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
 
-[configuration]
-
+[settings]
 # What episode must the user make their winner pick by?
-[[configuration.schema]]
+[[settings.fields]]
 id = "pickBy"
 type = "number"
 default = 2
-label.translation = "configuration.pickBy.label"
+label.translation = "settings.pickBy.label"
 
 # Should you be able to change your winner pick after the fact?
-[[configuration.schema]]
+[[settings.fields]]
 id = "allowChanges"
 type = "options"
 default = "disallow"
 options = [
-  { value = "disallow", label.translation = "configuration.allowChanges.disallow" },
-  { value = "allow", label.translation = "configuration.allowChanges.allow" },
-  { value = "untilVotedOut", label.translation = "configuration.allowChanges.untilVotedOut" },
+  { value = "disallow", label.translation = "settings.allowChanges.disallow" },
+  { value = "allow", label.translation = "settings.allowChanges.allow" },
+  { value = "untilVotedOut", label.translation = "settings.allowChanges.untilVotedOut" },
 ]
-label.translation = "configuration.allowChanges.label"
+label.translation = "settings.allowChanges.label"

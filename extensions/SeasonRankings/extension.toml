@@ -1,20 +1,20 @@
 name = "Survivor season rankings"
+handle = "survivor-season-rankings"
 
-[[extensionPoints]]
-id = "Series.Details.RenderAccessory"
-module = "features/SeriesDetails.tsx"
-[[extensionPoints.conditions]]
+[[extends]]
+target = "Series.Details.RenderAccessory"
+module = "./features/SeasonDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
 
-[[extensionPoints]]
-id = "Season.Details.RenderAccessory"
-module = "features/SeasonDetails.tsx"
-[[extensionPoints.conditions]]
+[[extends]]
+target = "Season.Details.RenderAccessory"
+module = "./features/SeriesDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
 
-[[extensionPoints]]
-id = "WatchThrough.Details.RenderAccessory"
-module = "features/WatchThroughDetails.tsx"
-
-[[extensionPoints.conditions]]
+[[extends]]
+target = "WatchThrough.Details.RenderAccessory"
+module = "./features/WatchThroughDetails.tsx"
+[[extends.conditions]]
 series.handle = "survivor"
