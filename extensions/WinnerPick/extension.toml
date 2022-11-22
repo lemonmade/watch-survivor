@@ -4,18 +4,14 @@ handle = "survivor-winner-pick"
 [[extends]]
 target = "Series.Details.RenderAccessory"
 module = "./features/SeriesDetails.tsx"
-[[extends.conditions]]
-series.handle = "survivor"
-
-[[extends]]
-target = "Season.Details.RenderAccessory"
-module = "./features/SeasonDetails.tsx"
+query = "./features/SeriesDetailsQuery.graphql"
 [[extends.conditions]]
 series.handle = "survivor"
 
 [[extends]]
 target = "WatchThrough.Details.RenderAccessory"
 module = "./features/WatchThroughDetails.tsx"
+query = "./features/WatchThroughDetailsQuery.graphql"
 [[extends.conditions]]
 series.handle = "survivor"
 

@@ -5,16 +5,17 @@ import {
 } from '@quilted/quilt/server';
 import {json} from '@quilted/quilt/http-handlers';
 import createAssetManifest from '@quilted/quilt/magic/app/asset-manifest';
+import {type CloudflareRequestContext} from '@quilted/cloudflare/http-handlers';
 
 import App from './App';
 
 const httpHandler = createHttpHandler();
 
-httpHandler.post('/api', async () => {
+httpHandler.post('/api', async (_request, {env}: CloudflareRequestContext) => {
   return json({good: true});
 });
 
-const reactHandler = createServerRenderingRequestHandler(App, {
+const reactHandler = createServerRenderingRequestHandler(() => <App />, {
   assets: createAssetManifest(),
 });
 

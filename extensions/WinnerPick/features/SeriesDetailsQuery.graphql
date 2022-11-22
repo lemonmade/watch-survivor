@@ -1,0 +1,9 @@
+query SeriesDetails {
+  user {
+    id
+  }
+  series {
+    id
+    name
+  }
+}

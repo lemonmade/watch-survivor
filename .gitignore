@@ -2,3 +2,5 @@ build
 **/node_modules
 .quilt
 .watch
+*.graphql.d.ts
+

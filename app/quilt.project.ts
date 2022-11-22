@@ -6,7 +6,7 @@ export default createProject((project) => {
     quiltApp({
       entry: './App.tsx',
       server: {
-        entry: './server.ts',
+        entry: './server.tsx',
       },
     }),
     cloudflareWorkers(),

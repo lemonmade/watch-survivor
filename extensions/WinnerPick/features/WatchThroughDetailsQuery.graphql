@@ -1,0 +1,14 @@
+query WatchThroughDetails {
+  watchThrough {
+    series {
+      name
+    }
+    currentWatch {
+      rating
+      finishedAt
+      notes {
+        content
+      }
+    }
+  }
+}
