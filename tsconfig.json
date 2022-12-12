@@ -5,11 +5,7 @@
     "outDir": "build/typescript/workspace"
   },
   "references": [
-    {
-      "path": "./extensions/SeasonRankings"
-    },
-    {
-      "path": "./extensions/WinnerPick"
-    }
+    {"path": "./extensions/SeasonRankings"},
+    {"path": "./extensions/WinnerPick"}
   ]
 }

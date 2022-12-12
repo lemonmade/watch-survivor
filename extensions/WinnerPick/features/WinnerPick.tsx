@@ -5,13 +5,12 @@ import {
   TextField,
   Text,
   Modal,
+  Popover,
   useApi,
   useSignal,
   useComputed,
   Heading,
 } from '@watching/clips-react';
-
-const Popover = 'Popover' as any;
 
 export function WinnerPick() {
   const count = useSignal(0);
@@ -46,7 +45,11 @@ export function WinnerPick() {
               <BlockStack spacing>
                 <View>Modal! {value.value}</View>
                 <Action
-                  onPress={() => {
+                  onPress={async () => {
+                    await new Promise<void>((resolve) => {
+                      setTimeout(() => resolve(), 2_000);
+                    });
+
                     // eslint-disable-next-line no-console
                     console.log('Pressed in a modal!');
                   }}

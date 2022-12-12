@@ -1,13 +1,8 @@
-import {extension, Text} from '@watching/clips-react';
+import {render} from '@remote-ui/react';
+import {extension} from '@watching/clips';
 
-export default extension<'WatchThrough.Details.RenderAccessory'>(() => (
-  <WatchThroughDetails />
-));
+import {SeasonRankings} from './SeasonRankings';
 
-function WatchThroughDetails() {
-  return (
-    <Text>
-      Season rankings!!! (rendered at {new Date().toLocaleTimeString()})
-    </Text>
-  );
-}
+export default extension<'WatchThrough.Details.RenderAccessory'>((root) => {
+  render(<SeasonRankings />, root);
+});
