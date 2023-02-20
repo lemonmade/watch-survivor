@@ -1,5 +1,5 @@
 import {createProject, quiltApp} from '@quilted/craft';
-import {cloudflareWorkers} from '@quilted/cloudflare/craft';
+import {cloudflarePages} from '@quilted/cloudflare/craft';
 
 export default createProject((project) => {
   project.use(
@@ -9,6 +9,6 @@ export default createProject((project) => {
         entry: './server.tsx',
       },
     }),
-    cloudflareWorkers(),
+    cloudflarePages(),
   );
 });

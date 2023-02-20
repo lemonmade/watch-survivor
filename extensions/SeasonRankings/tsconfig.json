@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
+    "jsx": "react-jsx",
     "outDir": "build/typescript"
   },
   "include": ["**/*"],

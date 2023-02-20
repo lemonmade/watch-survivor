@@ -1,13 +1,25 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  type-check:
+  checks:
+    name: Checks 📝
+    uses: ./.github/workflows/checks.yml
+
+  build:
+    name: Build 🏗
     runs-on: ubuntu-latest
-
     steps:
-      - uses: quilt-framework/action-prepare@v1
-
-      - name: Type check
-        run: yarn type-check
+      - uses: actions/checkout@v3
+      - uses: ./.github/workflows/actions/prepare
+      - name: Build
+        run: pnpm run build

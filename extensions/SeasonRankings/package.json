@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "@remote-ui/react": "^5.0.0",
-    "@types/react": "^17.0.0",
-    "@watching/clips": "^0.2.24",
-    "@watching/clips-dom": "^0.1.12",
+    "@remote-ui/react": "^5.0.1",
+    "@types/react": "^17.0.53",
+    "@watching/clips": "^0.2.27",
+    "@watching/clips-dom": "^0.1.13",
     "react": "^18.2.0",
     "react-reconciler": "^0.29.0",
     "vue": "^3.2.45"

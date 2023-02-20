@@ -1,25 +1,22 @@
 import '@quilted/quilt/global';
-import {
-  createHttpHandler,
-  createServerRenderingRequestHandler,
-} from '@quilted/quilt/server';
-import {json} from '@quilted/quilt/http-handlers';
-import createAssetManifest from '@quilted/quilt/magic/app/asset-manifest';
-import {type CloudflareRequestContext} from '@quilted/cloudflare/http-handlers';
+import {createRequestRouter, createServerRender} from '@quilted/quilt/server';
+import {json} from '@quilted/quilt/request-router';
+import {createAssetManifest} from '@quilted/quilt/magic/asset-manifest';
+import type {} from '@quilted/cloudflare';
 
 import App from './App';
 
-const httpHandler = createHttpHandler();
+const router = createRequestRouter();
 
-httpHandler.post('/api', async (_request, {env}: CloudflareRequestContext) => {
+router.post('/api', async (_request, {env}) => {
   return json({good: true});
 });
 
-const reactHandler = createServerRenderingRequestHandler(() => <App />, {
+const reactHandler = createServerRender(() => <App />, {
   assets: createAssetManifest(),
 });
 
 // For all GET requests, render our React application.
-httpHandler.get(reactHandler);
+router.get(reactHandler);
 
-export default httpHandler;
+export default router;
