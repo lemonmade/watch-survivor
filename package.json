@@ -30,6 +30,9 @@
   },
   "packageManager": "pnpm@7.18.1",
   "prettier": "@quilted/prettier",
+  "stylelint": {
+    "rules": {}
+  },
   "eslintConfig": {
     "extends": "@quilted/eslint-config/workspace",
     "ignorePatterns": [

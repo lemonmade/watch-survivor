@@ -11,6 +11,7 @@ jobs:
     uses: ./.github/workflows/checks.yml
 
   deploy:
+    name: Deploy 🚀
     runs-on: ubuntu-latest
 
     steps:
