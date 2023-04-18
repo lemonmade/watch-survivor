@@ -5,10 +5,10 @@ handle = "survivor-season-rankings"
 target = "Series.Details.RenderAccessory"
 module = "./features/SeriesDetails.tsx"
 [[extends.conditions]]
-series.handle = "survivor"
+series.handle = "survivor-14658"
 
 [[extends]]
 target = "WatchThrough.Details.RenderAccessory"
 module = "./features/WatchThroughDetails.tsx"
 [[extends.conditions]]
-series.handle = "survivor"
+series.handle = "survivor-14658"
