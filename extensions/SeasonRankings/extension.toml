@@ -2,13 +2,13 @@ name = "Survivor season rankings"
 handle = "survivor-season-rankings"
 
 [[extends]]
-target = "Series.Details.RenderAccessory"
+target = "series.details.accessory"
 module = "./features/SeriesDetails.tsx"
 [[extends.conditions]]
 series.handle = "survivor-14658"
 
 [[extends]]
-target = "WatchThrough.Details.RenderAccessory"
+target = "watch-through.details.accessory"
 module = "./features/WatchThroughDetails.tsx"
 [[extends.conditions]]
 series.handle = "survivor-14658"

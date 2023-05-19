@@ -3,11 +3,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "ExtensionPoint": {
-      "enum": [
-        "Season.Details.RenderAccessory",
-        "Series.Details.RenderAccessory",
-        "WatchThrough.Details.RenderAccessory"
-      ],
+      "enum": ["series.details.accessory", "watch-through.details.accessory"],
       "type": "string"
     },
     "LocalExtensionConfiguration": {

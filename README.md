@@ -13,6 +13,8 @@ If you want to be able to develop the extension on Safari and Firefox, you will 
 To use the proxy, follow the steps to [run the Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/), which should end with you running:
 
 ```sh
+# `cloudflared` command not found? Run `brew install cloudflared`
+# @see https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/
 cloudflared tunnel run
 ```
 

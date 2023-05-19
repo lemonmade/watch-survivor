@@ -2,14 +2,14 @@ name = "Survivor winner pick"
 handle = "survivor-winner-pick"
 
 [[extends]]
-target = "Series.Details.RenderAccessory"
+target = "series.details.accessory"
 module = "./features/SeriesDetails.tsx"
 query = "./features/SeriesDetailsQuery.graphql"
 [[extends.conditions]]
 series.handle = "survivor-14658"
 
 [[extends]]
-target = "WatchThrough.Details.RenderAccessory"
+target = "watch-through.details.accessory"
 module = "./features/WatchThroughDetails.tsx"
 query = "./features/WatchThroughDetailsQuery.graphql"
 [[extends.conditions]]

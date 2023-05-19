@@ -7,9 +7,9 @@ import {type Configuration} from '@quilted/craft/graphql';
 
 const EXTENSION_FILE_NAME = 'extension.toml';
 const EXTENSION_TARGET_SCHEMA_MAP = new Map([
-  ['Series.Details.RenderAccessory', 'graphql/SeriesDetails.schema.graphql'],
+  ['series.details.accessory', 'graphql/SeriesDetails.schema.graphql'],
   [
-    'WatchThrough.Details.RenderAccessory',
+    'watch-through.details.accessory',
     'graphql/WatchThroughDetails.schema.graphql',
   ],
 ]);

@@ -1,30 +1,31 @@
-import {useState, StrictMode} from 'react';
-import {Text, BlockStack, Action, Modal} from '@watching/clips';
-import {createRemoteReactComponent} from '@remote-ui/react';
+import {useState, createElement} from 'react';
+import {Action, Modal} from '@watching/clips';
+import {createRemoteComponent} from '@lemonmade/remote-ui-react';
 
-const ReactText = createRemoteReactComponent(Text);
-const ReactBlockStack = createRemoteReactComponent(BlockStack);
-const ReactModal = createRemoteReactComponent(Modal);
-const ReactAction = createRemoteReactComponent(Action, {
-  fragmentProps: ['overlay'],
-});
+const PreactAction = createRemoteComponent('ui-action', Action);
+
+const PreactModal = createRemoteComponent('ui-modal', Modal);
 
 export function SeasonRankings() {
   const [count, setCount] = useState(0);
 
-  return (
-    <StrictMode>
-      <ReactBlockStack spacing>
-        <ReactText>
-          Season rankings!!! (rendered at {new Date().toLocaleTimeString()})
-        </ReactText>
-        <ReactAction onPress={() => setCount((count) => count + 1)}>
-          Click me! ({count})
-        </ReactAction>
-        <ReactAction overlay={<ReactModal padding>{count}</ReactModal>}>
-          Modal
-        </ReactAction>
-      </ReactBlockStack>
-    </StrictMode>
+  return createElement(
+    'ui-block-stack',
+    {spacing: 'small'},
+    createElement(
+      'ui-text',
+      null,
+      `Season rankings!!! (rendered at ${new Date().toLocaleTimeString()})`,
+    ),
+    createElement(
+      PreactAction,
+      {onPress: () => setCount((count) => count + 1)},
+      `Click me! (${count})`,
+    ),
+    createElement(
+      PreactAction,
+      {overlay: createElement(PreactModal, {padding: true}, count)},
+      `Modal`,
+    ),
   );
 }
