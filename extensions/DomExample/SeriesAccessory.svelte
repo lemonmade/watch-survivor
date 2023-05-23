@@ -1,4 +1,5 @@
 <script lang="ts">
+  import {getContext} from 'svelte';
   import type {
     WithThreadSignals,
     Api,
@@ -7,8 +8,8 @@
   } from '@watching/clips';
   import type {SeriesQueryData} from './SeriesQuery.graphql';
 
-  export let api: WithThreadSignals<Api<ExtensionPoint>>;
-  export const query = api.query as any as Signal<SeriesQueryData>;
+  const api = getContext('clips.api') as WithThreadSignals<Api<ExtensionPoint>>;
+  const query = api.query as any as Signal<SeriesQueryData>;
 </script>
 
 <ui-text-block>
