@@ -1,0 +1,10 @@
+name = "DomExample"
+handle = "domexample"
+
+[[extends]]
+target = "series.details.accessory"
+module = "./SeriesAccessory.ts"
+query = "./SeriesQuery.graphql"
+
+# [[extends.conditions]]
+# series.handle = "survivor"

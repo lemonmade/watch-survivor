@@ -1,0 +1,10 @@
+{
+  "extends": "@quilted/typescript/project.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "build/typescript"
+  },
+  "include": ["**/*"],
+  "exclude": ["./build", "./quilt.project.ts"]
+}
