@@ -10,6 +10,7 @@ import {
   useSignal,
   useComputed,
   Heading,
+  useSignalValue,
 } from '@watching/clips-react';
 
 export function WinnerPick() {
@@ -17,13 +18,15 @@ export function WinnerPick() {
   const disabled = useComputed(() => count.value % 2 === 0);
   const value = useSignal('abc');
 
+  const resolvedValue = useSignalValue(value);
+
   return (
     <BlockStack spacing>
       <TextField
         changeTiming="input"
         label={
           <Text>
-            Text field <Text emphasis>{value.value}</Text>
+            Text field <Text emphasis>{resolvedValue}</Text>
           </Text>
         }
         value={value}
@@ -33,17 +36,17 @@ export function WinnerPick() {
           disabled={disabled}
           overlay={
             <Popover inlineAttachment="start">
-              <View padding>Popover! {value.value}</View>
+              <View padding>Popover! {resolvedValue}</View>
             </Popover>
           }
         >
-          Other action ({value.value})
+          Other action ({resolvedValue})
         </Action>
         <Action
           overlay={
             <Modal padding>
               <BlockStack spacing>
-                <View>Modal! {value.value}</View>
+                <View>Modal! {resolvedValue}</View>
                 <Action
                   onPress={async () => {
                     await new Promise<void>((resolve) => {

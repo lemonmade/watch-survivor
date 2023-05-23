@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "rootDir": ".",
     "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "outDir": "build/typescript"
   },
   "include": ["**/*"],

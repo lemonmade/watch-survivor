@@ -4,13 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "@lemonmade/remote-ui-preact": "^0.1.4",
-    "@lemonmade/remote-ui-react": "^0.1.17",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "@watching/clips": "^0.4.1",
-    "preact": "^10.14.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@watching/clips-preact": "^0.1.1",
+    "preact": "^10.14.1"
   }
 }
