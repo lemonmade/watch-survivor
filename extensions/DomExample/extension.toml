@@ -3,7 +3,7 @@ handle = "domexample"
 
 [[extends]]
 target = "series.details.accessory"
-module = "./SeriesAccessory.ts"
+module = "./SeriesAccessory.tsx"
 query = "./SeriesQuery.graphql"
 
 # [[extends.conditions]]

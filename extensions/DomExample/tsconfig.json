@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
-    "outDir": "build/typescript"
+    "outDir": "build/typescript",
+    "jsxImportSource": "solid-js"
   },
   "include": ["**/*"],
   "exclude": ["./build", "./quilt.project.ts"]
