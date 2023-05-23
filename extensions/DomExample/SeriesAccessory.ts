@@ -1,33 +1,13 @@
-import {extension, getQuery} from '@watching/clips';
+import {extension} from '@watching/clips';
 import '@watching/clips/elements';
-import {type SeriesQueryData} from './SeriesQuery.graphql';
 
-export default extension((root, {query, target}) => {
-  const {series} = getQuery<SeriesQueryData>(query);
+import SeriesAccessory from './SeriesAccessory.svelte';
+// import {type SeriesQueryData} from './SeriesQuery.graphql';
 
-  const seriesNameText = document.createTextNode(series.name);
-
-  query.subscribe(() => {
-    const {series} = getQuery<SeriesQueryData>(query);
-    seriesNameText.data = series.name;
+export default extension((root, api) => {
+  new SeriesAccessory({
+    target: root,
+    props: {api},
+    context: new Map([['clips.api', api]]),
   });
-
-  const seriesText = document.createElement('ui-text');
-  seriesText.emphasis = true;
-  seriesText.append(seriesNameText);
-
-  const targetText = document.createElement('ui-text');
-  targetText.emphasis = true;
-  targetText.append(target);
-
-  const textBlock = document.createElement('ui-text-block');
-  textBlock.append(
-    'You are rendering in the ',
-    targetText,
-    ' extension point, on a series named ',
-    seriesText,
-    '!',
-  );
-
-  root.append(textBlock);
 });
