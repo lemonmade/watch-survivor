@@ -3,7 +3,7 @@ import {babel} from '@rollup/plugin-babel';
 
 export default extensionRollupConfiguration(
   import.meta.url,
-  {esbuild: false},
+  {esbuild: false, mode: 'development'},
   {
     plugins: [
       babel({

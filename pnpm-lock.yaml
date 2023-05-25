@@ -76,6 +76,9 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.21.5
         version: 7.21.5(@babel/core@7.21.8)
+      '@lemonmade/remote-ui':
+        specifier: ^0.1.27
+        version: 0.1.27
       '@rollup/plugin-babel':
         specifier: ^6.0.3
         version: 6.0.3(@babel/core@7.21.8)(rollup@3.22.0)
