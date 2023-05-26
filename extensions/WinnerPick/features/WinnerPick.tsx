@@ -11,6 +11,7 @@ import {
   useComputed,
   Heading,
   useSignalValue,
+  type Signal,
 } from '@watching/clips-react';
 
 export function WinnerPick() {
@@ -19,6 +20,7 @@ export function WinnerPick() {
   const value = useSignal('abc');
 
   const resolvedValue = useSignalValue(value);
+  const resolvedCount = useSignalValue(count);
 
   return (
     <BlockStack spacing>
@@ -33,7 +35,7 @@ export function WinnerPick() {
       />
       <BlockStack spacing="small">
         <Action
-          disabled={disabled}
+          disabled={useSignalValue(disabled)}
           overlay={
             <Popover inlineAttachment="start">
               <View padding>Popover! {resolvedValue}</View>
@@ -70,7 +72,7 @@ export function WinnerPick() {
             count.value += 1;
           }}
         >
-          Increment ({count.value})
+          Increment ({resolvedCount})
         </Action>
       </BlockStack>
 
@@ -88,13 +90,18 @@ function ApiDebug() {
       {Object.entries(api).map(([key, value]) => (
         <View key={key}>
           <Text emphasis>{key}:</Text>{' '}
-          {JSON.stringify(
-            typeof value === 'object' && value != null && 'value' in value
-              ? value.value
-              : value,
+          {typeof value === 'object' && value != null && 'value' in value ? (
+            <ApiValueSignalRenderer value={value} />
+          ) : (
+            JSON.stringify(value)
           )}
         </View>
       ))}
     </BlockStack>
   );
+}
+
+function ApiValueSignalRenderer({value}: {value: Signal<any>}) {
+  const resolvedValue = useSignalValue(value);
+  return <Text>{JSON.stringify(resolvedValue)}</Text>;
 }
