@@ -1,13 +1,7 @@
-import {extension} from '@watching/clips';
 import '@watching/clips/elements';
-
+import {extension} from '@watching/clips-svelte';
 import SeriesAccessory from './SeriesAccessory.svelte';
-// import {type SeriesQueryData} from './SeriesQuery.graphql';
 
-export default extension((root, api) => {
-  new SeriesAccessory({
-    target: root,
-    props: {api},
-    context: new Map([['clips.api', api]]),
-  });
+export default extension((_, options) => {
+  return new SeriesAccessory(options);
 });
