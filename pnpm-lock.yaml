@@ -94,6 +94,12 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
+  extensions/example-dom-extension:
+    devDependencies:
+      '@watching/clips':
+        specifier: ^0.4.0
+        version: 0.4.6
+
 packages:
 
   /@ampproject/remapping@2.2.1:
