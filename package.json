@@ -22,7 +22,7 @@
     "@quilted/quilt": "^0.5.140",
     "@quilted/typescript": "^0.2.19",
     "@types/react": "^18.2.7",
-    "@watching/cli": "^2.0.12",
+    "@watching/cli": "^2.0.15",
     "@watching/tools": "^0.1.4",
     "fast-glob": "^3.2.12",
     "react": "npm:@quilted/react@^18.2.3",

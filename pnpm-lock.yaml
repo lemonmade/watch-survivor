@@ -32,8 +32,8 @@ importers:
         specifier: ^18.2.7
         version: 18.2.7
       '@watching/cli':
-        specifier: ^2.0.12
-        version: 2.0.12
+        specifier: ^2.0.15
+        version: 2.0.15
       '@watching/tools':
         specifier: ^0.1.4
         version: 0.1.4
@@ -61,11 +61,11 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       '@watching/clips':
-        specifier: ^0.4.8
-        version: 0.4.8
+        specifier: ^0.4.11
+        version: 0.4.11
       '@watching/clips-svelte':
-        specifier: ^0.1.1
-        version: 0.1.1(@watching/clips@0.4.8)(svelte@3.59.1)
+        specifier: ^0.1.4
+        version: 0.1.4(@watching/clips@0.4.11)(svelte@3.59.1)
       rollup-plugin-svelte:
         specifier: ^7.1.5
         version: 7.1.5(rollup@3.23.0)(svelte@3.59.1)
@@ -79,11 +79,11 @@ importers:
   extensions/SeasonRankings:
     devDependencies:
       '@watching/clips':
-        specifier: ^0.4.8
-        version: 0.4.8
+        specifier: ^0.4.11
+        version: 0.4.11
       '@watching/clips-preact':
-        specifier: ^0.1.7
-        version: 0.1.7(@watching/clips@0.4.8)(preact@10.15.1)
+        specifier: ^0.1.10
+        version: 0.1.10(@watching/clips@0.4.11)(preact@10.15.1)
       preact:
         specifier: ^10.15.1
         version: 10.15.1
@@ -97,11 +97,11 @@ importers:
         specifier: ^18.2.4
         version: 18.2.4
       '@watching/clips':
-        specifier: ^0.4.8
-        version: 0.4.8
+        specifier: ^0.4.11
+        version: 0.4.11
       '@watching/clips-react':
-        specifier: ^0.3.11
-        version: 0.3.11(@watching/clips@0.4.8)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^0.3.14
+        version: 0.3.14(@watching/clips@0.4.11)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -112,8 +112,8 @@ importers:
   extensions/example-dom-extension:
     devDependencies:
       '@watching/clips':
-        specifier: ^0.4.8
-        version: 0.4.8
+        specifier: ^0.4.11
+        version: 0.4.11
 
 packages:
 
@@ -2764,8 +2764,8 @@ packages:
       - jest-matcher-utils
     dev: true
 
-  /@lemonmade/remote-ui-preact@0.1.5(preact@10.15.1):
-    resolution: {integrity: sha512-6vUCEIq21/mxueitAleJ5XYY1l6TDGMxy0M/eGRVSG75Ljvd7nx+kDITgrzw6kpjtTN1pZqGsH4AIKuEgOXUWA==}
+  /@lemonmade/remote-ui-preact@0.1.6(preact@10.15.1):
+    resolution: {integrity: sha512-DE/uqfjbWJBUB0/JfAeWk9CHiSswxJ3Gm9jijvNtpUEPHahxaznhaQJp/ZoiV4smKl6La+R7vkjkRD24UdmT1A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       preact: ^10.0.0
@@ -2773,12 +2773,13 @@ packages:
       preact:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
+      '@lemonmade/remote-ui': 0.1.31
+      htm: 3.1.1
       preact: 10.15.1
     dev: true
 
-  /@lemonmade/remote-ui-react@0.1.19(react@18.2.0):
-    resolution: {integrity: sha512-9iTNENneaqBNvZgdug3dJvfMwfBmc3TUsn45rs9MDPQRcTVGTGouLhI77Yhc6C9psvfbTYS9CMkRa54fOfWlqg==}
+  /@lemonmade/remote-ui-react@0.1.20(react@18.2.0):
+    resolution: {integrity: sha512-cxS+YBGGO94Va/i/KFfeX6fLYoH1cJepmx+kp8+wIXhCtbchdNN2il0QBxMuQF16UJckYmEC06IgjinREKCbmA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
@@ -2786,14 +2787,17 @@ packages:
       react:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
+      '@lemonmade/remote-ui': 0.1.31
       '@types/react': 18.2.7
+      htm: 3.1.1
       react: 18.2.0
     dev: true
 
-  /@lemonmade/remote-ui@0.1.29:
-    resolution: {integrity: sha512-fuLScGuZh1Zwx7tGw1fxfK1x1HZh0WUpo5XET5M60IjBHdS8RVdk5SBLtIp+e43fmq6xIlUzjN2+ZxNTWzytdA==}
+  /@lemonmade/remote-ui@0.1.31:
+    resolution: {integrity: sha512-qeXP+F+gu2uM1bQRH4gSDtLINmYuns4oZ1oHgID+hqYc2DeMj9jplXECTuiml3EEwJSciA0q3gnt4s/WinwIgA==}
     engines: {node: '>=14.0.0'}
+    dependencies:
+      htm: 3.1.1
     dev: true
 
   /@miniflare/cache@2.13.0:
@@ -4448,11 +4452,11 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@watching/cli@2.0.12:
-    resolution: {integrity: sha512-tC7Snd+9NAi65zHEPBWVT1MVeWouvN6aY0L7zcbUDbjN0oqWkhunFMO+d44h+SW4f+pzQixQd1YzCrl038IbVg==}
+  /@watching/cli@2.0.15:
+    resolution: {integrity: sha512-Rny/+dTsbvS2kqGL//TGpfKU7XdY72Hbi67Hzc2Iy4aF7tI7uqgYPwTxh0cvOCqb7+HDLufpgk/DI6jCsnxWRw==}
     hasBin: true
     peerDependencies:
-      '@watching/clips': ^0.4.8
+      '@watching/clips': ^0.4.11
     peerDependenciesMeta:
       '@watching/clips':
         optional: true
@@ -4489,29 +4493,29 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@watching/clips-preact@0.1.7(@watching/clips@0.4.8)(preact@10.15.1):
-    resolution: {integrity: sha512-FXSsioN+6RINF1D+cJoziVqIKU/WBtDElJCvfH4nojVVPSymlP8vpBPXl6/ZEyzurjZKHjbQUYsAi7c4bhUlzw==}
+  /@watching/clips-preact@0.1.10(@watching/clips@0.4.11)(preact@10.15.1):
+    resolution: {integrity: sha512-FwdbjuQtHt7RVKph32V4xBP/XALvEGbBzX4iW6ENUukHOKrkt/J56Pb0y4K4WX3exPpDK0WDTYoWnSnUOJ3yDw==}
     peerDependencies:
-      '@watching/clips': ^0.4.8
+      '@watching/clips': ^0.4.11
       preact: ^10.14.0
     peerDependenciesMeta:
       preact:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
-      '@lemonmade/remote-ui-preact': 0.1.5(preact@10.15.1)
+      '@lemonmade/remote-ui': 0.1.31
+      '@lemonmade/remote-ui-preact': 0.1.6(preact@10.15.1)
       '@preact/signals-core': 1.3.0
-      '@watching/clips': 0.4.8
-      '@watching/thread-signals': 0.1.9
+      '@watching/clips': 0.4.11
+      '@watching/thread-signals': 0.1.10
       preact: 10.15.1
     transitivePeerDependencies:
       - '@babel/runtime'
     dev: true
 
-  /@watching/clips-react@0.3.11(@watching/clips@0.4.8)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-eIQkkAfNUssz0o6Ip3TbRcQgUIatl4OdzWF0jR/d9zTqKCcrj9KcK6EMuKxiPOozNaVjKtWL1UAfrfwisVWW8w==}
+  /@watching/clips-react@0.3.14(@watching/clips@0.4.11)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-VyxBdbeatoT1bkm5VMKWDFsg18PaAQQ79lnsZMzlHERtMzU8CdV26gQwpAhHbTgnBJKdq/Z42yx4k4NIEumuRQ==}
     peerDependencies:
-      '@watching/clips': ^0.4.8
+      '@watching/clips': ^0.4.11
       react: ^18.0.0
       react-dom: ^18.0.0
     peerDependenciesMeta:
@@ -4520,43 +4524,43 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
-      '@lemonmade/remote-ui-react': 0.1.19(react@18.2.0)
+      '@lemonmade/remote-ui': 0.1.31
+      '@lemonmade/remote-ui-react': 0.1.20(react@18.2.0)
       '@preact/signals-core': 1.3.0
       '@types/react': 18.2.7
       '@types/react-dom': 18.2.4
-      '@watching/clips': 0.4.8
-      '@watching/thread-signals': 0.1.9
+      '@watching/clips': 0.4.11
+      '@watching/thread-signals': 0.1.10
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
     dev: true
 
-  /@watching/clips-svelte@0.1.1(@watching/clips@0.4.8)(svelte@3.59.1):
-    resolution: {integrity: sha512-Zlq/yFKWveR00T+vT3VxMfdqNz2cy7YfBTObyMuC9JrilSJn2WuNjYcDxdrWc1uvPR3waufWjtZHny54Ei5E9g==}
+  /@watching/clips-svelte@0.1.4(@watching/clips@0.4.11)(svelte@3.59.1):
+    resolution: {integrity: sha512-tJuLdGQHTj4PgjhDHcuAi8iKICQuRCSuhMXfo7xZME2DxPO1R+wbFRdhIH3SlZcOafcC86qKv2j9SDkMlcBeDA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      '@watching/clips': ^0.4.8
+      '@watching/clips': ^0.4.11
       svelte: ^3.50.0
     peerDependenciesMeta:
       svelte:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
+      '@lemonmade/remote-ui': 0.1.31
       '@preact/signals-core': 1.3.0
-      '@watching/clips': 0.4.8
-      '@watching/thread-signals': 0.1.9
+      '@watching/clips': 0.4.11
+      '@watching/thread-signals': 0.1.10
       svelte: 3.59.1
     transitivePeerDependencies:
       - '@babel/runtime'
     dev: true
 
-  /@watching/clips@0.4.8:
-    resolution: {integrity: sha512-lc+gCozvKPYsfsZCgTFotoPN8bwKyZf7PyLOrb0myPT83sHzFqj7n3ttIwFz7vvHUhTEYYmxNjPfL6yZxcm/cw==}
+  /@watching/clips@0.4.11:
+    resolution: {integrity: sha512-vp0GeyVAlH2xM71x3M9CN7WC4Utkx7aHmKAh3o9ZZnAl5CoKbpuO+9DepdZnQ55wy+RgQYLmALWkGZgDDCp5cQ==}
     dependencies:
-      '@lemonmade/remote-ui': 0.1.29
-      '@watching/thread-signals': 0.1.9
+      '@lemonmade/remote-ui': 0.1.31
+      '@watching/thread-signals': 0.1.10
     transitivePeerDependencies:
       - '@babel/runtime'
     dev: true
@@ -4567,8 +4571,8 @@ packages:
       graphql: 16.6.0
     dev: true
 
-  /@watching/thread-signals@0.1.9:
-    resolution: {integrity: sha512-5TH0lh8GDUQSPp9stb6cgTIHKk0oRU1ZV8zEOjoEh4cZEx+PHH46BRMF5M32hldHo/2tCsnS0SMdWQMNIA2Ycw==}
+  /@watching/thread-signals@0.1.10:
+    resolution: {integrity: sha512-NvfWTi5L5Y8nYgG+5M5aCig/yF3qHMwVHNUqyMs851seczBM8TTwfh8pXiJgTiDAfHPDkp7itZctu0iJpErvnA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       '@babel/runtime': '>=7.0.0 <8.0.0'
@@ -6860,6 +6864,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       lru-cache: 6.0.0
+    dev: true
+
+  /htm@3.1.1:
+    resolution: {integrity: sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==}
     dev: true
 
   /html-encoding-sniffer@3.0.0:
