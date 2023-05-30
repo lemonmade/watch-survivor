@@ -1,0 +1,9 @@
+{
+  "name": "example-dom-extension",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@watching/clips": "^0.4.11"
+  }
+}

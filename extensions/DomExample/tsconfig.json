@@ -1,5 +1,8 @@
 {
-  "extends": "@quilted/typescript/project.json",
+  "extends": [
+    "@quilted/typescript/project.json",
+    "@tsconfig/svelte/tsconfig.json"
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
