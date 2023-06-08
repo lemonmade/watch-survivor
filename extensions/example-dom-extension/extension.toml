@@ -5,6 +5,8 @@ handle = "example-dom-extension"
 target = "series.details.accessory"
 module = "./SeriesAccessory.ts"
 query = "./SeriesQuery.graphql"
+mutations = "./*Mutation.graphql"
+loading.ui = "./StartAccessorySkeleton.html"
 
 # [[extends.conditions]]
 # series.handle = "survivor"

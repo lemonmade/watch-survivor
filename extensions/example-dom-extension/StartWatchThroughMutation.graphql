@@ -1,0 +1,12 @@
+mutation StartWatchThrough($from: EpisodeSliceInput, $to: EpisodeSliceInput) {
+  startWatchThrough(from: $from, to: $to, navigate: true) {
+    errors {
+      code
+      message
+    }
+    watchThrough {
+      id
+      url
+    }
+  }
+}

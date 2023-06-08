@@ -15,7 +15,7 @@
 
 <ui-block-stack spacing="small">
   <ui-text-block>
-    You are rendering in the <ui-text emphasis={true}>{api.target}</ui-text>
+    You are rendering in the <ui-text emphasis>{api.target}</ui-text>
     extension point, on a series named
     <ui-text emphasis="strong">{$query.series.name}</ui-text>!
   </ui-text-block>

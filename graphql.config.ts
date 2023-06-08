@@ -1,5 +1,5 @@
 import {type Configuration} from '@quilted/craft/graphql';
-import {extensionGraphQLProjects} from '@watching/tools/graphql';
+import {extensionGraphQLProjects} from '@watching/cli/tools/graphql';
 
 const configuration: Configuration = {
   projects: extensionGraphQLProjects(),

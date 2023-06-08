@@ -2,10 +2,13 @@ import '@watching/clips/elements';
 import {extension, getQuery} from '@watching/clips';
 
 import {type SeriesQueryData} from './SeriesQuery.graphql';
+import startWatchThroughMutation from './StartWatchThroughMutation.graphql';
 
 export default extension<'series.details.accessory', SeriesQueryData>(
-  (root, {query, target}) => {
+  async (root, {query, mutate, target}) => {
     const {series} = getQuery<SeriesQueryData>(query);
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
     const seriesNameText = document.createTextNode(series.name);
 
@@ -31,6 +34,16 @@ export default extension<'series.details.accessory', SeriesQueryData>(
       '!',
     );
 
-    root.append(textBlock);
+    const action = document.createElement('ui-action');
+    action.textContent = 'Start watch through!';
+    action.onPress = async () => {
+      await mutate(startWatchThroughMutation);
+    };
+
+    const stack = document.createElement('ui-stack');
+    stack.spacing = true;
+    stack.append(textBlock, action);
+
+    root.append(stack);
   },
 );
