@@ -1,15 +1,51 @@
-import {QuiltApp} from '@quilted/quilt';
+import {useMemo} from 'react';
+import {QuiltApp, useRoutes, type PropsWithChildren} from '@quilted/quilt';
+import {QueryClient} from '@tanstack/react-query';
+import {ReactQueryContext} from '@quilted/react-query';
 
-import {Http} from './foundation/Http';
-import {Head} from './foundation/Head';
+import {trpc} from '~/shared/trpc.ts';
+import {
+  AppContextReact,
+  type AppContext as AppContextType,
+} from '~/shared/context.ts';
 
-import {Start} from './features/Start';
+import {Http} from './foundation/Http.tsx';
+import {Head} from './foundation/Head.tsx';
 
-const routes = [{match: '/', render: <Start />}];
+import {Start} from './features/Start.tsx';
 
-/**
- * The root component for your application.
- */
-export default function App() {
-  return <QuiltApp http={<Http />} html={<Head />} routes={routes} />;
+export interface Props extends AppContextType {}
+
+// The root component for your application. You will typically render any
+// app-wide context in this component.
+export default function App(props: Props) {
+  return (
+    <QuiltApp http={<Http />} html={<Head />}>
+      <AppContext {...props}>
+        <Routes />
+      </AppContext>
+    </QuiltApp>
+  );
+}
+
+// This component renders the routes for your application. If you have a lot
+// of routes, you may want to split this component into its own file.
+function Routes() {
+  return useRoutes([{match: '/', render: <Start />}]);
+}
+
+// This component renders any app-wide context.
+function AppContext({
+  children,
+  ...appContext
+}: PropsWithChildren<AppContextType>) {
+  const queryClient = useMemo(() => new QueryClient(), []);
+
+  return (
+    <AppContextReact.Provider value={appContext}>
+      <trpc.Provider client={appContext.trpc} queryClient={queryClient}>
+        <ReactQueryContext client={queryClient}>{children}</ReactQueryContext>
+      </trpc.Provider>
+    </AppContextReact.Provider>
+  );
 }

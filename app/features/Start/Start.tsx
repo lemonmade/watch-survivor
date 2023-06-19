@@ -1,13 +1,9 @@
-import {useEffect} from 'react';
+import {trpc} from '~/shared/trpc.ts';
+
 import styles from './Start.module.css';
 
 export function Start() {
-  useEffect(() => {
-    fetch('/api', {method: 'POST'})
-      .then((result) => result.json())
-      // eslint-disable-next-line no-console
-      .then(console.log, console.error);
-  });
+  const [data] = trpc.message.useSuspenseQuery('World');
 
-  return <div className={styles.Start}>Hello world!!</div>;
+  return <div className={styles.Start}>{data}</div>;
 }
