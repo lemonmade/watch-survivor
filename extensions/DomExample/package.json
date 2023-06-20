@@ -5,8 +5,8 @@
   "private": true,
   "devDependencies": {
     "@tsconfig/svelte": "^4.0.1",
-    "@watching/clips": "^0.4.14",
-    "@watching/clips-svelte": "^0.1.7",
+    "@watching/clips": "^0.4.15",
+    "@watching/clips-svelte": "^0.1.8",
     "rollup-plugin-svelte": "^7.1.5",
     "svelte": "^3.59.1",
     "svelte-preprocess": "^5.0.4"
