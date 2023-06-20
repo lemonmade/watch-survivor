@@ -35,8 +35,8 @@ importers:
         specifier: ^18.2.7
         version: 18.2.7
       '@watching/cli':
-        specifier: ^2.0.20
-        version: 2.0.20
+        specifier: ^2.0.21
+        version: 2.0.21
       fast-glob:
         specifier: ^3.2.12
         version: 3.2.12
@@ -4736,8 +4736,8 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@watching/cli@2.0.20:
-    resolution: {integrity: sha512-OgO7bPmzq6yHeZFZSD06CvC6BfXWgXMR2nrJoG/8WaprT3yD7mw8Fd640X5PW3hUIFn+TNSBwUNBxUrJD2WsWg==}
+  /@watching/cli@2.0.21:
+    resolution: {integrity: sha512-O5r0oaOKiwBipx9RmvMs80+ahYqxAT72MjAd+K+RBpYLrC+nCVlZg69O69Apx/fGzJ1MIjnxc7lTzIbVf8Zu/A==}
     hasBin: true
     peerDependencies:
       '@watching/clips': ^0.4.15

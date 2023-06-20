@@ -23,7 +23,7 @@
     "@quilted/typescript": "^0.2.19",
     "@types/html-minifier-terser": "^7.0.0",
     "@types/react": "^18.2.7",
-    "@watching/cli": "^2.0.20",
+    "@watching/cli": "^2.0.21",
     "fast-glob": "^3.2.12",
     "fast-xml-parser": "^4.2.3",
     "htm": "^3.1.1",
