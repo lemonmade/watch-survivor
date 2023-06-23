@@ -1,4 +1,13 @@
 {
+  "actions": {
+    "showModal": "Modal action",
+    "modal": "An action in a modal!",
+    "increment": "Increment ({count})",
+    "other": "Other action ({count})"
+  },
+  "count": {
+    "label": "Text field {value}"
+  },
   "settings": {
     "pickBy": {
       "label": "The episode by which you need to make a winner pick"

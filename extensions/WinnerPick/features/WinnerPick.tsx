@@ -11,6 +11,7 @@ import {
   useComputed,
   Heading,
   useSignalValue,
+  useTranslate,
   type Signal,
 } from '@watching/clips-react';
 
@@ -18,6 +19,7 @@ export function WinnerPick() {
   const count = useSignal(0);
   const disabled = useComputed(() => count.value % 2 === 0);
   const value = useSignal('abc');
+  const t = useTranslate();
 
   const resolvedValue = useSignalValue(value);
   const resolvedCount = useSignalValue(count);
@@ -26,11 +28,9 @@ export function WinnerPick() {
     <BlockStack spacing>
       <TextField
         changeTiming="input"
-        label={
-          <Text>
-            Text field <Text emphasis>{resolvedValue}</Text>
-          </Text>
-        }
+        label={t('count.label', {
+          value: <Text emphasis>{resolvedValue}</Text>,
+        })}
         value={value}
       />
       <BlockStack spacing="small">
@@ -38,11 +38,11 @@ export function WinnerPick() {
           disabled={useSignalValue(disabled)}
           overlay={
             <Popover inlineAttachment="start">
-              <View padding>Popover! {resolvedValue}</View>
+              <View padding="base">Popover! {resolvedValue}</View>
             </Popover>
           }
         >
-          Other action ({resolvedValue})
+          {t('actions.other', {count: resolvedCount})}
         </Action>
         <Action
           overlay={
@@ -59,20 +59,20 @@ export function WinnerPick() {
                     console.log('Pressed in a modal!');
                   }}
                 >
-                  An action in a modal!
+                  {t('actions.modal')}
                 </Action>
               </BlockStack>
             </Modal>
           }
         >
-          Modal action
+          {t('actions.showModal')}
         </Action>
         <Action
           onPress={() => {
             count.value += 1;
           }}
         >
-          Increment ({resolvedCount})
+          {t('actions.increment', {count: resolvedCount})}
         </Action>
       </BlockStack>
 
@@ -92,6 +92,8 @@ function ApiDebug() {
           <Text emphasis>{key}:</Text>{' '}
           {typeof value === 'object' && value != null && 'value' in value ? (
             <ApiValueSignalRenderer value={value} />
+          ) : typeof value === 'function' ? (
+            'function() {}'
           ) : (
             JSON.stringify(value)
           )}

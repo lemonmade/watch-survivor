@@ -4,6 +4,6 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "@watching/clips": "^0.4.15"
+    "@watching/clips": "^0.4.16"
   }
 }
