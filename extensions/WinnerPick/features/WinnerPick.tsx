@@ -55,7 +55,6 @@ export function WinnerPick() {
                       setTimeout(() => resolve(), 2_000);
                     });
 
-                    // eslint-disable-next-line no-console
                     console.log('Pressed in a modal!');
                   }}
                 >

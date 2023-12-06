@@ -28,12 +28,12 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to Cloudflare
-        run: pnpm wrangler pages publish ./app/build/public --project-name watch-survivor
+        run: pnpm --filter app run deploy
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
       - name: Deploy to Watch
-        run: pnpm watchapp push && pnpm watchapp publish
+        run: pnpm exec watchapp push && pnpm exec watchapp publish
         env:
           WATCH_ACCESS_TOKEN: ${{ secrets.WATCH_ACCESS_TOKEN }}

@@ -1,5 +1,9 @@
-import {useMemo} from 'react';
-import {QuiltApp, useRoutes, type PropsWithChildren} from '@quilted/quilt';
+import {useMemo, type PropsWithChildren} from 'react';
+
+import {Routing, useRoutes} from '@quilted/quilt/navigate';
+import {Localization} from '@quilted/quilt/localize';
+import {HTML} from '@quilted/quilt/html';
+import {PerformanceContext} from '@quilted/quilt/performance';
 import {QueryClient} from '@tanstack/react-query';
 import {ReactQueryContext} from '@quilted/react-query';
 
@@ -20,11 +24,19 @@ export interface Props extends AppContextType {}
 // app-wide context in this component.
 export default function App(props: Props) {
   return (
-    <QuiltApp http={<Http />} html={<Head />}>
-      <AppContext {...props}>
-        <Routes />
-      </AppContext>
-    </QuiltApp>
+    <PerformanceContext>
+      <HTML>
+        <Localization locale="en-CA">
+          <Routing>
+            <AppContext {...props}>
+              <Http />
+              <Head />
+              <Routes />
+            </AppContext>
+          </Routing>
+        </Localization>
+      </HTML>
+    </PerformanceContext>
   );
 }
 

@@ -1,5 +1,5 @@
 import Env from '@quilted/quilt/env';
-import {useCurrentUrl} from '@quilted/quilt';
+import {useCurrentUrl} from '@quilted/quilt/navigate';
 import {
   CacheControl,
   ResponseHeader,
