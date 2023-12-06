@@ -21,7 +21,7 @@
     "@quilted/quilt": "^0.6.7",
     "@quilted/typescript": "^0.3.0",
     "@types/html-minifier-terser": "^7.0.0",
-    "@types/react": "^18.2.41",
+    "@types/react": "^18.2.42",
     "@watching/cli": "^2.1.0",
     "concurrently": "^8.2.2",
     "fast-glob": "^3.2.12",

@@ -26,8 +26,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       '@types/react':
-        specifier: ^18.2.41
-        version: 18.2.41
+        specifier: ^18.2.42
+        version: 18.2.42
       '@watching/cli':
         specifier: ^2.1.0
         version: 2.1.0(typescript@5.3.2)
@@ -95,8 +95,8 @@ importers:
         specifier: ^10.44.0
         version: 10.44.1
       '@types/react':
-        specifier: ^18.2.41
-        version: 18.2.41
+        specifier: ^18.2.42
+        version: 18.2.42
       '@types/react-dom':
         specifier: ^18.2.5
         version: 18.2.5
@@ -140,8 +140,8 @@ importers:
         specifier: ^0.5.0
         version: 0.5.0(preact@10.19.2)
       '@watching/clips-preact':
-        specifier: ^0.2.0
-        version: 0.2.0(@watching/clips@0.5.0)(preact@10.19.2)
+        specifier: ^0.2.1
+        version: 0.2.1(@watching/clips@0.5.0)(preact@10.19.2)
       preact:
         specifier: ^10.19.2
         version: 10.19.2
@@ -149,8 +149,8 @@ importers:
   extensions/WinnerPick:
     devDependencies:
       '@types/react':
-        specifier: ^18.2.41
-        version: 18.2.41
+        specifier: ^18.2.42
+        version: 18.2.42
       '@types/react-dom':
         specifier: ^18.2.4
         version: 18.2.4
@@ -1403,7 +1403,7 @@ packages:
       babel-plugin-polyfill-corejs2: 0.4.6(@babel/core@7.23.5)
       babel-plugin-polyfill-corejs3: 0.8.6(@babel/core@7.23.5)
       babel-plugin-polyfill-regenerator: 0.5.3(@babel/core@7.23.5)
-      core-js-compat: 3.33.3
+      core-js-compat: 3.34.0
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -2145,7 +2145,7 @@ packages:
         optional: true
     dependencies:
       '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       htm: 3.1.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2170,8 +2170,8 @@ packages:
       preact: 10.19.2
     dev: true
 
-  /@mdn/browser-compat-data@5.4.3:
-    resolution: {integrity: sha512-+VnaO5zYUwFQVuRqp2qLPGR5GwhhJ/lrp0yEmamJ/nI15P2GKwGBEWRDiITZR8i6AYxeiQSu2rOi/gqxehnPuA==}
+  /@mdn/browser-compat-data@5.4.4:
+    resolution: {integrity: sha512-ykYCVBr3CjyKHiXefqyl3SuSpoib/5ViBZ2kjD18xbZFJpnSSJZg1deq+lirYN0vheKhj7BU+29qjAusfZalOA==}
     dev: true
 
   /@miniflare/cache@2.13.0:
@@ -2803,7 +2803,7 @@ packages:
       '@types/caniuse-api': 3.0.6
       abort-controller: 3.0.0
       caniuse-api: 3.0.0
-      core-js: 3.33.3
+      core-js: 3.34.0
       headers-polyfill: 4.0.2
       pkg-dir: 6.0.1
       regenerator-runtime: 0.13.11
@@ -2896,7 +2896,7 @@ packages:
     dependencies:
       '@quilted/assets': 0.1.1
       '@quilted/react-server-render': 0.4.0(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       react: /@quilted/react@18.2.8
     transitivePeerDependencies:
       - react-dom
@@ -2957,7 +2957,7 @@ packages:
     dependencies:
       '@quilted/assets': 0.1.1
       '@quilted/react-server-render': 0.4.0(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       react: /@quilted/react@18.2.8
       react-dom: /@quilted/react-dom@18.2.9
     dev: true
@@ -3080,7 +3080,7 @@ packages:
         optional: true
     dependencies:
       '@quilted/react-utilities': 0.2.0(@quilted/react@18.2.8)
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       react: /@quilted/react@18.2.8
       react-dom: /@quilted/react-dom@18.2.9
     dev: true
@@ -3096,7 +3096,7 @@ packages:
     dependencies:
       '@preact/signals': 1.2.2(preact@10.19.2)
       '@quilted/signals': 0.2.0
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       preact: 10.19.2
       react: /@quilted/react@18.2.8
     dev: true
@@ -3155,7 +3155,7 @@ packages:
   /@quilted/react@18.2.8:
     resolution: {integrity: sha512-j4Sye9iQQw6R+DOXUFKVDA65/X7psATOMtbZ0gJAkzYVBNDvnSN4NdXPr31IL4ZUjzon4II8Oqe/RLEpezlSBg==}
     dependencies:
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       preact: 10.19.2
     dev: true
 
@@ -3182,7 +3182,7 @@ packages:
       '@babel/preset-env': 7.23.5(@babel/core@7.23.5)
       '@babel/preset-react': 7.23.3(@babel/core@7.23.5)
       '@babel/preset-typescript': 7.23.3(@babel/core@7.23.5)
-      '@mdn/browser-compat-data': 5.4.3
+      '@mdn/browser-compat-data': 5.4.4
       '@quilted/assets': 0.1.1
       '@quilted/babel': 0.2.1(@babel/core@7.23.5)(@babel/template@7.22.15)
       '@quilted/graphql': 3.0.1
@@ -3715,23 +3715,23 @@ packages:
   /@types/react-dom@18.2.17:
     resolution: {integrity: sha512-rvrT/M7Df5eykWFxn6MYt5Pem/Dbyc1N8Y0S9Mrkw2WFCRiqUgw9P7ul2NpwsXCSM1DVdENzdG9J5SreqfAIWg==}
     dependencies:
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
     dev: true
 
   /@types/react-dom@18.2.4:
     resolution: {integrity: sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==}
     dependencies:
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
     dev: true
 
   /@types/react-dom@18.2.5:
     resolution: {integrity: sha512-sRQsOS/sCLnpQhR4DSKGTtWFE3FZjpQa86KPVbhUqdYMRZ9FEFcfAytKhR/vUG2rH1oFbOOej6cuD7MFSobDRQ==}
     dependencies:
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
     dev: true
 
-  /@types/react@18.2.41:
-    resolution: {integrity: sha512-CwOGr/PiLiNBxEBqpJ7fO3kocP/2SSuC9fpH5K7tusrg4xPSRT/193rzolYwQnTN02We/ATXKnb6GqA5w4fRxw==}
+  /@types/react@18.2.42:
+    resolution: {integrity: sha512-c1zEr96MjakLYus/wPnuWDo1/zErfdU9rNsIGmE+NV71nx88FG9Ttgo5dqorXTu/LImX2f63WBP986gJkMPNbA==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -3833,8 +3833,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@watching/clips-preact@0.2.0(@watching/clips@0.5.0)(preact@10.19.2):
-    resolution: {integrity: sha512-FJLvCDYJfqeZHpeDplUwzwA2hT9nhubRTBxFvS19JTPp+Yf7Ekat+oKdkpdlF3uI8lORuIVHuwIJJwf3FLEUsA==}
+  /@watching/clips-preact@0.2.1(@watching/clips@0.5.0)(preact@10.19.2):
+    resolution: {integrity: sha512-4xNKJZRi8NKzyhWekeNuBbwBvBm0RW67tD/hzSYP0RqPP4Am2HcXHMxhjF/0GRrNLHrOB+x/6z6HKOKZzcdpQA==}
     peerDependencies:
       '@watching/clips': ^0.5.0
       preact: ^10.14.0
@@ -3864,7 +3864,7 @@ packages:
       '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
       '@lemonmade/remote-ui-react': 0.3.1(@preact/signals-core@1.5.0)(preact@10.19.2)(react@18.2.0)
       '@preact/signals-core': 1.5.0
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
       '@types/react-dom': 18.2.4
       '@watching/clips': 0.5.0(preact@10.19.2)
       react: 18.2.0
@@ -4069,7 +4069,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.5
       '@babel/helper-define-polyfill-provider': 0.4.3(@babel/core@7.23.5)
-      core-js-compat: 3.33.3
+      core-js-compat: 3.34.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4150,7 +4150,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001566
-      electron-to-chromium: 1.4.601
+      electron-to-chromium: 1.4.605
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -4373,14 +4373,14 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /core-js-compat@3.33.3:
-    resolution: {integrity: sha512-cNzGqFsh3Ot+529GIXacjTJ7kegdt5fPXxCBVS1G0iaZpuo/tBz399ymceLJveQhFFZ8qThHiP3fzuoQjKN2ow==}
+  /core-js-compat@3.34.0:
+    resolution: {integrity: sha512-4ZIyeNbW/Cn1wkMMDy+mvrRUxrwFNjKwbhCfQpDd+eLgYipDqp8oGFGtLmhh18EDPKA0g3VUBYOxQGGwvWLVpA==}
     dependencies:
       browserslist: 4.22.2
     dev: true
 
-  /core-js@3.33.3:
-    resolution: {integrity: sha512-lo0kOocUlLKmm6kv/FswQL8zbkH7mVsLJ/FULClOhv8WRVmKLVcs6XPNQAzstfeJTCHMyButEwG+z1kHxHoDZw==}
+  /core-js@3.34.0:
+    resolution: {integrity: sha512-aDdvlDder8QmY91H88GzNi9EtQi2TjvQhpCX6B1v/dAZHU1AuLgHvRh54RiOerpEhEW46Tkf+vgAViB/CWC0ag==}
     requiresBuild: true
     dev: true
 
@@ -4620,8 +4620,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.601:
-    resolution: {integrity: sha512-SpwUMDWe9tQu8JX5QCO1+p/hChAi9AE9UpoC3rcHVc+gdCGlbT3SGb5I1klgb952HRIyvt9wZhSz9bNBYz9swA==}
+  /electron-to-chromium@1.4.605:
+    resolution: {integrity: sha512-V52j+P5z6cdRqTjPR/bYNxx7ETCHIkm5VIGuyCy3CMrfSnbEpIlLnk5oHmZo7gYvDfh2TfHeanB6rawyQ23ktg==}
     dev: true
 
   /emoji-regex@8.0.0:

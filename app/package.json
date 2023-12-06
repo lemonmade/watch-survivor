@@ -17,7 +17,7 @@
     "@trpc/client": "^10.44.0",
     "@trpc/react-query": "11.0.0-alpha-next-2023-11-24-13-58-38.113",
     "@trpc/server": "^10.44.0",
-    "@types/react": "^18.2.41",
+    "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.5",
     "preact": "^10.19.2",
     "react": "npm:@quilted/react@^18.2.3",
