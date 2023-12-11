@@ -22,7 +22,7 @@
     "@quilted/typescript": "^0.3.0",
     "@types/html-minifier-terser": "^7.0.0",
     "@types/react": "^18.2.42",
-    "@watching/cli": "^2.1.0",
+    "@watching/cli": "^2.1.1",
     "concurrently": "^8.2.2",
     "fast-glob": "^3.2.12",
     "fast-xml-parser": "^4.2.3",
@@ -32,7 +32,7 @@
     "react": "npm:@quilted/react@^18.2.3",
     "react-dom": "npm:@quilted/react-dom@^18.2.4",
     "rollup": "^4.6.1",
-    "typescript": "^5.3.2",
+    "typescript": "^5.3.3",
     "vite": "^5.0.4",
     "vitest": "^0.34.6",
     "wrangler": "^2.20.0"

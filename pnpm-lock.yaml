@@ -12,16 +12,16 @@ importers:
         version: 0.2.4(@quilted/craft@0.2.4)(@quilted/quilt@0.6.7)
       '@quilted/craft':
         specifier: ^0.2.4
-        version: 0.2.4(@babel/template@7.22.15)(preact@10.19.2)(rollup@4.6.1)(typescript@5.3.2)(vite@5.0.4)(vitest@0.34.6)
+        version: 0.2.4(@babel/template@7.22.15)(preact@10.19.3)(rollup@4.6.1)(typescript@5.3.3)(vite@5.0.4)(vitest@0.34.6)
       '@quilted/prettier':
         specifier: ^0.2.11
         version: 0.2.11
       '@quilted/quilt':
         specifier: ^0.6.7
-        version: 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.2)(vitest@0.34.6)
+        version: 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.3)(vitest@0.34.6)
       '@quilted/typescript':
         specifier: ^0.3.0
-        version: 0.3.0(typescript@5.3.2)
+        version: 0.3.0(typescript@5.3.3)
       '@types/html-minifier-terser':
         specifier: ^7.0.0
         version: 7.0.0
@@ -29,8 +29,8 @@ importers:
         specifier: ^18.2.42
         version: 18.2.42
       '@watching/cli':
-        specifier: ^2.1.0
-        version: 2.1.0(typescript@5.3.2)
+        specifier: ^2.1.1
+        version: 2.1.1(typescript@5.3.3)
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
@@ -59,8 +59,8 @@ importers:
         specifier: ^4.6.1
         version: 4.6.1
       typescript:
-        specifier: ^5.3.2
-        version: 5.3.2
+        specifier: ^5.3.3
+        version: 5.3.3
       vite:
         specifier: ^5.0.4
         version: 5.0.4(@types/node@20.10.2)
@@ -75,7 +75,7 @@ importers:
     devDependencies:
       '@quilted/quilt':
         specifier: ^0.6.7
-        version: 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.2)(vitest@0.34.6)
+        version: 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.3)(vitest@0.34.6)
       '@quilted/react-query':
         specifier: ^0.3.1
         version: 0.3.1(@quilted/quilt@0.6.7)(@quilted/react@18.2.8)(@tanstack/react-query@5.12.2)
@@ -101,8 +101,8 @@ importers:
         specifier: ^18.2.5
         version: 18.2.5
       preact:
-        specifier: ^10.19.2
-        version: 10.19.2
+        specifier: ^10.19.3
+        version: 10.19.3
       react:
         specifier: npm:@quilted/react@^18.2.3
         version: /@quilted/react@18.2.8
@@ -120,31 +120,31 @@ importers:
         version: 4.0.1
       '@watching/clips':
         specifier: ^0.5.0
-        version: 0.5.0(preact@10.19.2)
+        version: 0.5.0(preact@10.19.3)
       '@watching/clips-svelte':
         specifier: ^0.2.0
-        version: 0.2.0(@watching/clips@0.5.0)(preact@10.19.2)(svelte@3.59.1)
+        version: 0.2.0(@watching/clips@0.5.0)(preact@10.19.3)(svelte@3.59.1)
       rollup-plugin-svelte:
         specifier: ^7.1.5
-        version: 7.1.5(rollup@4.6.1)(svelte@3.59.1)
+        version: 7.1.5(rollup@4.7.0)(svelte@3.59.1)
       svelte:
         specifier: ^3.59.1
         version: 3.59.1
       svelte-preprocess:
         specifier: ^5.0.4
-        version: 5.0.4(@babel/core@7.23.5)(svelte@3.59.1)(typescript@5.3.2)
+        version: 5.0.4(@babel/core@7.23.5)(svelte@3.59.1)(typescript@5.3.3)
 
   extensions/SeasonRankings:
     devDependencies:
       '@watching/clips':
         specifier: ^0.5.0
-        version: 0.5.0(preact@10.19.2)
+        version: 0.5.0(preact@10.19.3)
       '@watching/clips-preact':
         specifier: ^0.2.1
-        version: 0.2.1(@watching/clips@0.5.0)(preact@10.19.2)
+        version: 0.2.1(@watching/clips@0.5.0)(preact@10.19.3)
       preact:
-        specifier: ^10.19.2
-        version: 10.19.2
+        specifier: ^10.19.3
+        version: 10.19.3
 
   extensions/WinnerPick:
     devDependencies:
@@ -156,10 +156,10 @@ importers:
         version: 18.2.4
       '@watching/clips':
         specifier: ^0.5.0
-        version: 0.5.0(preact@10.19.2)
+        version: 0.5.0(preact@10.19.3)
       '@watching/clips-react':
         specifier: ^0.4.0
-        version: 0.4.0(@watching/clips@0.5.0)(preact@10.19.2)(react-dom@18.2.0)(react@18.2.0)
+        version: 0.4.0(@watching/clips@0.5.0)(preact@10.19.3)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -171,7 +171,7 @@ importers:
     devDependencies:
       '@watching/clips':
         specifier: ^0.5.0
-        version: 0.5.0(preact@10.19.2)
+        version: 0.5.0(preact@10.19.3)
 
 packages:
 
@@ -2103,8 +2103,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@lemonmade/graphql-live@0.4.1(graphql@16.8.1):
-    resolution: {integrity: sha512-N4n+ezyBhOCeIhejwi/rQEFTKmN1JOXy6UHPrFBgSqV/jRmvSs9KTmukOFUi9B2AFYbO9alU7YoctV7ycjtYXg==}
+  /@lemonmade/graphql-live@0.4.2(graphql@16.8.1):
+    resolution: {integrity: sha512-wIGOQkXF510AT87G6aW1OtMVR3wDMTMtZhoY0MINajljyOHfvij8qeJWfkJ42974N7WPZDOFqXy2YKEfdbo0YQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       graphql: ^16.0.0
@@ -2117,7 +2117,7 @@ packages:
       graphql: 16.8.1
     dev: true
 
-  /@lemonmade/remote-ui-preact@0.4.1(@preact/signals-core@1.5.0)(preact@10.19.2):
+  /@lemonmade/remote-ui-preact@0.4.1(@preact/signals-core@1.5.1)(preact@10.19.3):
     resolution: {integrity: sha512-P2xLAyAu0vTXRJXwnzbXG++FuEcHrHZVAktr99z40KqAwozabRet+zRU/E3XldHDg0YfcbI85duAEFF/qrbK8A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2129,13 +2129,13 @@ packages:
       preact:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@preact/signals-core': 1.5.0
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@preact/signals-core': 1.5.1
       htm: 3.1.1
-      preact: 10.19.2
+      preact: 10.19.3
     dev: true
 
-  /@lemonmade/remote-ui-react@0.3.1(@preact/signals-core@1.5.0)(preact@10.19.2)(react@18.2.0):
+  /@lemonmade/remote-ui-react@0.3.1(@preact/signals-core@1.5.1)(preact@10.19.3)(react@18.2.0):
     resolution: {integrity: sha512-2fl6ewvi3gQd2DbuA6QnzceMlFZX6VCKuc3BEeNiUSFCLc/JV1EsclZvUjV89ZJyT0EYLpsq/LifIhj3uP0buQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2144,7 +2144,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
       '@types/react': 18.2.42
       htm: 3.1.1
       react: 18.2.0
@@ -2153,7 +2153,7 @@ packages:
       - preact
     dev: true
 
-  /@lemonmade/remote-ui@0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2):
+  /@lemonmade/remote-ui@0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3):
     resolution: {integrity: sha512-iR7SeKdRtes3uApLStQ2cjr6Dj3SPzdDiKp7qMdp+tJ1qyy0cvHOWPm4Hl/ld7vJphMQUjzz/USHGHAmrzVQAg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2165,9 +2165,9 @@ packages:
       preact:
         optional: true
     dependencies:
-      '@preact/signals-core': 1.5.0
+      '@preact/signals-core': 1.5.1
       htm: 3.1.1
-      preact: 10.19.2
+      preact: 10.19.3
     dev: true
 
   /@mdn/browser-compat-data@5.4.4:
@@ -2571,36 +2571,36 @@ packages:
     dev: true
     optional: true
 
-  /@preact/signals-core@1.5.0:
-    resolution: {integrity: sha512-U2diO1Z4i1n2IoFgMYmRdHWGObNrcuTRxyNEn7deSq2cru0vj0583HYQZHsAqcs7FE+hQyX3mjIV7LAfHCvy8w==}
+  /@preact/signals-core@1.5.1:
+    resolution: {integrity: sha512-dE6f+WCX5ZUDwXzUIWNMhhglmuLpqJhuy3X3xHrhZYI0Hm2LyQwOu0l9mdPiWrVNsE+Q7txOnJPgtIqHCYoBVA==}
     dev: true
 
-  /@preact/signals@1.2.2(preact@10.19.2):
+  /@preact/signals@1.2.2(preact@10.19.3):
     resolution: {integrity: sha512-ColCqdo4cRP18bAuIR4Oik5rDpiyFtPIJIygaYPMEAwTnl4buWkBOflGBSzhYyPyJfKpkwlekrvK+1pzQ2ldWw==}
     peerDependencies:
       preact: 10.x
     dependencies:
-      '@preact/signals-core': 1.5.0
-      preact: 10.19.2
+      '@preact/signals-core': 1.5.1
+      preact: 10.19.3
     dev: true
 
   /@prefresh/babel-plugin@0.5.1:
     resolution: {integrity: sha512-uG3jGEAysxWoyG3XkYfjYHgaySFrSsaEb4GagLzYaxlydbuREtaX+FTxuIidp241RaLl85XoHg9Ej6E4+V1pcg==}
     dev: true
 
-  /@prefresh/core@1.5.2(preact@10.19.2):
+  /@prefresh/core@1.5.2(preact@10.19.3):
     resolution: {integrity: sha512-A/08vkaM1FogrCII5PZKCrygxSsc11obExBScm3JF1CryK2uDS3ZXeni7FeKCx1nYdUkj4UcJxzPzc1WliMzZA==}
     peerDependencies:
       preact: ^10.0.0
     dependencies:
-      preact: 10.19.2
+      preact: 10.19.3
     dev: true
 
   /@prefresh/utils@1.2.0:
     resolution: {integrity: sha512-KtC/fZw+oqtwOLUFM9UtiitB0JsVX0zLKNyRTA332sqREqSALIIQQxdUCS1P3xR/jT1e2e8/5rwH6gdcMLEmsQ==}
     dev: true
 
-  /@prefresh/vite@2.4.4(preact@10.19.2)(vite@5.0.4):
+  /@prefresh/vite@2.4.4(preact@10.19.3)(vite@5.0.4):
     resolution: {integrity: sha512-7jcz3j5pXufOWTjl31n0Lc3BcU8oGoacoaWx/Ur1QJ+fd4Xu0G7g/ER1xV02x7DCiVoFi7xtSgaophOXoJvpmA==}
     peerDependencies:
       preact: ^10.4.0
@@ -2608,10 +2608,10 @@ packages:
     dependencies:
       '@babel/core': 7.23.5
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.5.2(preact@10.19.2)
+      '@prefresh/core': 1.5.2(preact@10.19.3)
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
-      preact: 10.19.2
+      preact: 10.19.3
       vite: 5.0.4(@types/node@20.10.2)
     transitivePeerDependencies:
       - supports-color
@@ -2678,8 +2678,8 @@ packages:
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.0
       '@cloudflare/workers-types': 4.20231121.0
-      '@quilted/craft': 0.2.4(@babel/template@7.22.15)(preact@10.19.2)(rollup@4.6.1)(typescript@5.3.2)(vite@5.0.4)(vitest@0.34.6)
-      '@quilted/quilt': 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.2)(vitest@0.34.6)
+      '@quilted/craft': 0.2.4(@babel/template@7.22.15)(preact@10.19.3)(rollup@4.6.1)(typescript@5.3.3)(vite@5.0.4)(vitest@0.34.6)
+      '@quilted/quilt': 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.3)(vitest@0.34.6)
       common-tags: 1.8.2
       mime: 2.6.0
       miniflare: 2.14.1
@@ -2691,7 +2691,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@quilted/craft@0.2.4(@babel/template@7.22.15)(preact@10.19.2)(rollup@4.6.1)(typescript@5.3.2)(vite@5.0.4)(vitest@0.34.6):
+  /@quilted/craft@0.2.4(@babel/template@7.22.15)(preact@10.19.3)(rollup@4.6.1)(typescript@5.3.3)(vite@5.0.4)(vitest@0.34.6):
     resolution: {integrity: sha512-wYk6Ik06+/BubVuMxxqYTtVT3Vu1ELzR6U8JvUsgmJIvubAYVI2/2kmZDUlY2o5S1ZKAyQs6IKrcYg+/Wxhr0A==}
     hasBin: true
     peerDependencies:
@@ -2706,9 +2706,9 @@ packages:
       vitest:
         optional: true
     dependencies:
-      '@quilted/graphql-tools': 0.2.0(typescript@5.3.2)
+      '@quilted/graphql-tools': 0.2.0(typescript@5.3.3)
       '@quilted/rollup': 0.2.20(@babel/template@7.22.15)(rollup@4.6.1)
-      '@quilted/vite': 0.1.13(@babel/template@7.22.15)(preact@10.19.2)(rollup@4.6.1)(vite@5.0.4)(vitest@0.34.6)
+      '@quilted/vite': 0.1.13(@babel/template@7.22.15)(preact@10.19.3)(rollup@4.6.1)(vite@5.0.4)(vitest@0.34.6)
       pkg-dir: 7.0.0
       rollup: 4.6.1
       vite: 5.0.4(@types/node@20.10.2)
@@ -2733,7 +2733,7 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /@quilted/graphql-tools@0.2.0(typescript@5.3.2):
+  /@quilted/graphql-tools@0.2.0(typescript@5.3.3):
     resolution: {integrity: sha512-KE0xPVSNafwvd4fayXZyzhGiPJEopFP33toPP7tL7iHOsencpPl04TQxLzqUdU5oq//I4jF7XIVBh1u+6e6Nlg==}
     hasBin: true
     dependencies:
@@ -2747,7 +2747,7 @@ packages:
       arg: 5.0.2
       chokidar: 3.5.3
       colorette: 2.0.20
-      cosmiconfig: 8.3.6(typescript@5.3.2)
+      cosmiconfig: 8.3.6(typescript@5.3.3)
       cosmiconfig-toml-loader: 1.0.0
       esbuild: 0.19.8
       globby: 13.2.2
@@ -2799,7 +2799,7 @@ packages:
     resolution: {integrity: sha512-5UEptBZFwGVpk7I6U2oMhegIEIG9PSLej78ZOEn98x6aigq2pgpXJfXg/HoV7wuaihm1B7TeFnsvW0Jw/xa85w==}
     dependencies:
       '@peculiar/webcrypto': 1.4.3
-      '@remix-run/web-fetch': 4.4.1
+      '@remix-run/web-fetch': 4.4.2
       '@types/caniuse-api': 3.0.6
       abort-controller: 3.0.0
       caniuse-api: 3.0.0
@@ -2810,7 +2810,7 @@ packages:
       whatwg-fetch: 3.6.19
     dev: true
 
-  /@quilted/preact-testing@0.1.3(preact@10.19.2):
+  /@quilted/preact-testing@0.1.3(preact@10.19.3):
     resolution: {integrity: sha512-OVF16bV1evaahoWkoslJHA9pTuUEB2rcztJveoW3EYgXWldgITHf2zKLlLCDKUBxkt5HJEfSsI9USw5P+A2LFA==}
     peerDependencies:
       preact: ^10.19.0
@@ -2819,14 +2819,14 @@ packages:
         optional: true
     dependencies:
       jest-matcher-utils: 27.5.1
-      preact: 10.19.2
+      preact: 10.19.3
     dev: true
 
   /@quilted/prettier@0.2.11:
     resolution: {integrity: sha512-OGkhMYoOmy+9udbMFfT2WtGWzYOCRO1hslAyYSJhGTMUQf9mXUyve6ceOfA+to8WKESAJ9LMYJ93LFg8YOIfmQ==}
     dev: true
 
-  /@quilted/quilt@0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.2)(vitest@0.34.6):
+  /@quilted/quilt@0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.3)(vitest@0.34.6):
     resolution: {integrity: sha512-RLfmH6L8NUTazCevHfULMMbF6Altsl9ZYXm99IMyfr+Wb1tv9zUOtPuI7Eh04tKO5mz+D33+OyX/tKNYzsAIiQ==}
     peerDependencies:
       graphql: ^16.7.0
@@ -2866,16 +2866,16 @@ packages:
       '@quilted/react-router': 0.4.0(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)
       '@quilted/react-server-render': 0.4.0(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)
       '@quilted/react-signals': 0.2.2(@quilted/react@18.2.8)
-      '@quilted/react-testing': 0.6.4(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(preact@10.19.2)
+      '@quilted/react-testing': 0.6.4(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(preact@10.19.3)
       '@quilted/react-utilities': 0.2.0(@quilted/react@18.2.8)
       '@quilted/react-workers': 0.4.1(@quilted/react@18.2.8)
       '@quilted/request-router': 0.2.0
       '@quilted/signals': 0.2.0
-      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.0)
+      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.1)
       '@quilted/useful-react-types': 2.0.0
       graphql: 16.8.1
       jest-matcher-utils: 29.7.0
-      preact: 10.19.2
+      preact: 10.19.3
       react: /@quilted/react@18.2.8
       react-dom: /@quilted/react-dom@18.2.9
       vitest: 0.34.6
@@ -2925,8 +2925,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dependencies:
       '@types/react-dom': 18.2.17
-      preact: 10.19.2
-      preact-render-to-string: 6.3.1(preact@10.19.2)
+      preact: 10.19.3
+      preact-render-to-string: 6.3.1(preact@10.19.3)
     dev: true
 
   /@quilted/react-graphql@0.5.0(@quilted/react@18.2.8):
@@ -3043,7 +3043,7 @@ packages:
       react:
         optional: true
     dependencies:
-      '@quilted/quilt': 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.2)(vitest@0.34.6)
+      '@quilted/quilt': 0.6.7(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(graphql@16.8.1)(preact@10.19.3)(vitest@0.34.6)
       '@quilted/useful-types': 2.0.0
       '@tanstack/react-query': 5.12.2(@quilted/react@18.2.8)
       react: /@quilted/react@18.2.8
@@ -3094,14 +3094,14 @@ packages:
       react:
         optional: true
     dependencies:
-      '@preact/signals': 1.2.2(preact@10.19.2)
+      '@preact/signals': 1.2.2(preact@10.19.3)
       '@quilted/signals': 0.2.0
       '@types/react': 18.2.42
-      preact: 10.19.2
+      preact: 10.19.3
       react: /@quilted/react@18.2.8
     dev: true
 
-  /@quilted/react-testing@0.6.4(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(preact@10.19.2):
+  /@quilted/react-testing@0.6.4(@quilted/react-dom@18.2.9)(@quilted/react@18.2.8)(preact@10.19.3):
     resolution: {integrity: sha512-eCZAt8eyoYzKlNBqe49QnoXbrxIoB4INLsFN1cr6MAK8Jhr7ccOfvzPijZau2msjo9FNPTxW77GhyW/XWtPzrA==}
     peerDependencies:
       preact: ^10.19.0
@@ -3118,9 +3118,9 @@ packages:
       react-test-renderer:
         optional: true
     dependencies:
-      '@quilted/preact-testing': 0.1.3(preact@10.19.2)
+      '@quilted/preact-testing': 0.1.3(preact@10.19.3)
       jest-matcher-utils: 27.5.1
-      preact: 10.19.2
+      preact: 10.19.3
       react: /@quilted/react@18.2.8
       react-dom: /@quilted/react-dom@18.2.9
     dev: true
@@ -3156,7 +3156,7 @@ packages:
     resolution: {integrity: sha512-j4Sye9iQQw6R+DOXUFKVDA65/X7psATOMtbZ0gJAkzYVBNDvnSN4NdXPr31IL4ZUjzon4II8Oqe/RLEpezlSBg==}
     dependencies:
       '@types/react': 18.2.42
-      preact: 10.19.2
+      preact: 10.19.3
     dev: true
 
   /@quilted/request-router@0.2.0:
@@ -3225,11 +3225,11 @@ packages:
     resolution: {integrity: sha512-0jldtzq/ySO9l1dU9YM0ha2S1GNvvz1YnFuKCT2bBBs+Lsa6K1rdLsZlerLnQ3iE/bg1Vqcrticr3JSgd0Xggw==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@preact/signals-core': 1.5.0
+      '@preact/signals-core': 1.5.1
       '@quilted/events': 2.0.0
     dev: true
 
-  /@quilted/threads@2.1.0(@preact/signals-core@1.5.0):
+  /@quilted/threads@2.1.0(@preact/signals-core@1.5.1):
     resolution: {integrity: sha512-kAJsvb7w/fi8fBAST/ONnKvRv9WlbwL8WSqELb+VPuFrspVX3OZ7VQ1q+i3fp6VhcNVqSiFz3r0o6tPeCy2IuA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -3238,7 +3238,7 @@ packages:
       '@preact/signals-core':
         optional: true
     dependencies:
-      '@preact/signals-core': 1.5.0
+      '@preact/signals-core': 1.5.1
       '@quilted/events': 2.0.0
     dev: true
 
@@ -3258,12 +3258,12 @@ packages:
       '@trpc/server': 10.44.1
     dev: true
 
-  /@quilted/typescript@0.3.0(typescript@5.3.2):
+  /@quilted/typescript@0.3.0(typescript@5.3.3):
     resolution: {integrity: sha512-2B+l7t096rfY6d2W2VL3QfQPUouNJCMtiNDZGaeyDUzdq3lxYWDgpi89APnIMQkAXAauwOOodgmlfMLmU4UVVQ==}
     peerDependencies:
       typescript: ^5.2.0
     dependencies:
-      typescript: 5.3.2
+      typescript: 5.3.3
     dev: true
 
   /@quilted/useful-react-types@2.0.0:
@@ -3274,7 +3274,7 @@ packages:
     resolution: {integrity: sha512-7xLznGa7UyWdcxHELRyNtLReL4xdfv6OaZbod4mbFzif+ZBw+5LsjAZwL+JMQqSe39yLqhhlBXTKlTXuLiBIWQ==}
     dev: true
 
-  /@quilted/vite@0.1.13(@babel/template@7.22.15)(preact@10.19.2)(rollup@4.6.1)(vite@5.0.4)(vitest@0.34.6):
+  /@quilted/vite@0.1.13(@babel/template@7.22.15)(preact@10.19.3)(rollup@4.6.1)(vite@5.0.4)(vitest@0.34.6):
     resolution: {integrity: sha512-hMOY5HRccVyzD6WnS2srHBM6qhbvpIYGPnHQ/fq4lz7WU36Iqp5lbkuoYhVa8r6cRBIuGCK1VRIhcnsl1sfsrw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -3287,7 +3287,7 @@ packages:
         optional: true
     dependencies:
       '@babel/core': 7.23.5
-      '@prefresh/vite': 2.4.4(preact@10.19.2)(vite@5.0.4)
+      '@prefresh/vite': 2.4.4(preact@10.19.3)(vite@5.0.4)
       '@quilted/babel': 0.2.1(@babel/core@7.23.5)(@babel/template@7.22.15)
       '@quilted/request-router': 0.2.0
       '@quilted/rollup': 0.2.20(@babel/template@7.22.15)(rollup@4.6.1)
@@ -3306,7 +3306,7 @@ packages:
   /@quilted/workers@0.4.1:
     resolution: {integrity: sha512-0QTwWJspnAZUtaj+qTEvgnuW67KdIJjN1lW7r2vA5OKlqfLJoXXYQ4y1ENeLXdejrseF0U0CmtcwoVX2rATjnw==}
     dependencies:
-      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.0)
+      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.1)
     transitivePeerDependencies:
       - '@preact/signals-core'
     dev: true
@@ -3318,8 +3318,8 @@ packages:
       web-encoding: 1.1.5
     dev: true
 
-  /@remix-run/web-fetch@4.4.1:
-    resolution: {integrity: sha512-xMceEGn2kvfeWS91nHSOhEQHPGgjFnmDVpWFZrbWPVdiTByMZIn421/tdSF6Kd1RsNsY+5Iwt3JFEKZHAcMQHw==}
+  /@remix-run/web-fetch@4.4.2:
+    resolution: {integrity: sha512-jgKfzA713/4kAW/oZ4bC3MoLWyjModOVDjFPNseVqcJKSafgIscrYL9G50SurEYLswPuoU3HzSbO0jQCMYWHhA==}
     engines: {node: ^10.17 || >=12.3}
     dependencies:
       '@remix-run/web-blob': 3.1.0
@@ -3476,8 +3476,24 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-android-arm-eabi@4.7.0:
+    resolution: {integrity: sha512-rGku10pL1StFlFvXX5pEv88KdGW6DHUghsxyP/aRYb9eH+74jTGJ3U0S/rtlsQ4yYq1Hcc7AMkoJOb1xu29Fxw==}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-android-arm64@4.6.1:
     resolution: {integrity: sha512-1TKm25Rn20vr5aTGGZqo6E4mzPicCUD79k17EgTLAsXc1zysyi4xXKACfUbwyANEPAEIxkzwue6JZ+stYzWUTA==}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-android-arm64@4.7.0:
+    resolution: {integrity: sha512-/EBw0cuJ/KVHiU2qyVYUhogXz7W2vXxBzeE9xtVIMC+RyitlY2vvaoysMUqASpkUtoNIHlnKTu/l7mXOPgnKOA==}
     cpu: [arm64]
     os: [android]
     requiresBuild: true
@@ -3492,8 +3508,24 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-darwin-arm64@4.7.0:
+    resolution: {integrity: sha512-4VXG1bgvClJdbEYYjQ85RkOtwN8sqI3uCxH0HC5w9fKdqzRzgG39K7GAehATGS8jghA7zNoS5CjSKkDEqWmNZg==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-darwin-x64@4.6.1:
     resolution: {integrity: sha512-LoSU9Xu56isrkV2jLldcKspJ7sSXmZWkAxg7sW/RfF7GS4F5/v4EiqKSMCFbZtDu2Nc1gxxFdQdKwkKS4rwxNg==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-darwin-x64@4.7.0:
+    resolution: {integrity: sha512-/ImhO+T/RWJ96hUbxiCn2yWI0/MeQZV/aeukQQfhxiSXuZJfyqtdHPUPrc84jxCfXTxbJLmg4q+GBETeb61aNw==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
@@ -3508,8 +3540,24 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-linux-arm-gnueabihf@4.7.0:
+    resolution: {integrity: sha512-zhye8POvTyUXlKbfPBVqoHy3t43gIgffY+7qBFqFxNqVtltQLtWeHNAbrMnXiLIfYmxcoL/feuLDote2tx+Qbg==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-linux-arm64-gnu@4.6.1:
     resolution: {integrity: sha512-9lhc4UZstsegbNLhH0Zu6TqvDfmhGzuCWtcTFXY10VjLLUe4Mr0Ye2L3rrtHaDd/J5+tFMEuo5LTCSCMXWfUKw==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-arm64-gnu@4.7.0:
+    resolution: {integrity: sha512-RAdr3OJnUum6Vs83cQmKjxdTg31zJnLLTkjhcFt0auxM6jw00GD6IPFF42uasYPr/wGC6TRm7FsQiJyk0qIEfg==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
@@ -3524,8 +3572,32 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-linux-arm64-musl@4.7.0:
+    resolution: {integrity: sha512-nhWwYsiJwZGq7SyR3afS3EekEOsEAlrNMpPC4ZDKn5ooYSEjDLe9W/xGvoIV8/F/+HNIY6jY8lIdXjjxfxopXw==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-riscv64-gnu@4.7.0:
+    resolution: {integrity: sha512-rlfy5RnQG1aop1BL/gjdH42M2geMUyVQqd52GJVirqYc787A/XVvl3kQ5NG/43KXgOgE9HXgCaEH05kzQ+hLoA==}
+    cpu: [riscv64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-linux-x64-gnu@4.6.1:
     resolution: {integrity: sha512-DNGZvZDO5YF7jN5fX8ZqmGLjZEXIJRdJEdTFMhiyXqyXubBa0WVLDWSNlQ5JR2PNgDbEV1VQowhVRUh+74D+RA==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-gnu@4.7.0:
+    resolution: {integrity: sha512-cCkoGlGWfBobdDtiiypxf79q6k3/iRVGu1HVLbD92gWV5WZbmuWJCgRM4x2N6i7ljGn1cGytPn9ZAfS8UwF6vg==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
@@ -3540,8 +3612,24 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-linux-x64-musl@4.7.0:
+    resolution: {integrity: sha512-R2oBf2p/Arc1m+tWmiWbpHBjEcJnHVnv6bsypu4tcKdrYTpDfl1UT9qTyfkIL1iiii5D4WHxUHCg5X0pzqmxFg==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-win32-arm64-msvc@4.6.1:
     resolution: {integrity: sha512-v2FVT6xfnnmTe3W9bJXl6r5KwJglMK/iRlkKiIFfO6ysKs0rDgz7Cwwf3tjldxQUrHL9INT/1r4VA0n9L/F1vQ==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-win32-arm64-msvc@4.7.0:
+    resolution: {integrity: sha512-CPtgaQL1aaPc80m8SCVEoxFGHxKYIt3zQYC3AccL/SqqiWXblo3pgToHuBwR8eCP2Toa+X1WmTR/QKFMykws7g==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
@@ -3556,8 +3644,24 @@ packages:
     dev: true
     optional: true
 
+  /@rollup/rollup-win32-ia32-msvc@4.7.0:
+    resolution: {integrity: sha512-pmioUlttNh9GXF5x2CzNa7Z8kmRTyhEzzAC+2WOOapjewMbl+3tGuAnxbwc5JyG8Jsz2+hf/QD/n5VjimOZ63g==}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@rollup/rollup-win32-x64-msvc@4.6.1:
     resolution: {integrity: sha512-0zfTlFAIhgz8V2G8STq8toAjsYYA6eci1hnXuyOTUFnymrtJwnS6uGKiv3v5UrPZkBlamLvrLV2iiaeqCKzb0A==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-win32-x64-msvc@4.7.0:
+    resolution: {integrity: sha512-SeZzC2QhhdBQUm3U0c8+c/P6UlRyBcLL2Xp5KX7z46WXZxzR8RJSIWL9wSUeBTgxog5LTPJuPj0WOT9lvrtP7Q==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
@@ -3627,7 +3731,7 @@ packages:
   /@types/better-sqlite3@7.6.8:
     resolution: {integrity: sha512-ASndM4rdGrzk7iXXqyNC4fbwt4UEjpK0i3j4q4FyeQrLAthfB6s7EF135ZJE0qQxtKIMFwmyT6x0switET7uIw==}
     dependencies:
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
     dev: true
 
   /@types/caniuse-api@3.0.6:
@@ -3660,7 +3764,7 @@ packages:
     resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
     dev: true
 
   /@types/html-minifier-terser@7.0.0:
@@ -3678,7 +3782,7 @@ packages:
   /@types/node-forge@1.3.10:
     resolution: {integrity: sha512-y6PJDYN4xYBxwd22l+OVH35N+1fCYWiuC3aiP2SlXVE6Lo7SS+rSx9r89hLxrP4pn6n1lBGhHJ12pj3F3Mpttw==}
     dependencies:
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
     dev: true
 
   /@types/node@20.10.2:
@@ -3687,8 +3791,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node@20.10.3:
-    resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
+  /@types/node@20.10.4:
+    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -3700,7 +3804,7 @@ packages:
   /@types/prompts@2.4.9:
     resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
     dependencies:
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
       kleur: 3.0.3
     dev: true
 
@@ -3735,7 +3839,7 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
-      csstype: 3.1.2
+      csstype: 3.1.3
     dev: true
 
   /@types/resolve@1.20.2:
@@ -3792,8 +3896,8 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
-  /@watching/cli@2.1.0(typescript@5.3.2):
-    resolution: {integrity: sha512-0NGK28VbRvOOjUKU/r1cDePhEpoXB93cdlb7gKOyqElcLu/lVI+kaXwRNzthvp/75TygIjj4+osqlUr4/+mzCQ==}
+  /@watching/cli@2.1.1(typescript@5.3.3):
+    resolution: {integrity: sha512-B84ynXN23/kP4VrBC2D1agxD+Y6bXe5vqTlx8fP1CplJCUDQGeBKWMWYlGyF9VJr0E1dXKTL/PBWW9Mj+W7EGw==}
     hasBin: true
     peerDependencies:
       '@watching/clips': ^0.5.0
@@ -3801,15 +3905,15 @@ packages:
       '@watching/clips':
         optional: true
     dependencies:
-      '@lemonmade/graphql-live': 0.4.1(graphql@16.8.1)
+      '@lemonmade/graphql-live': 0.4.2(graphql@16.8.1)
       '@quilted/cli-kit': 0.1.12
       '@quilted/graphql': 3.0.1
-      '@quilted/graphql-tools': 0.2.0(typescript@5.3.2)
+      '@quilted/graphql-tools': 0.2.0(typescript@5.3.3)
       '@quilted/polyfills': 0.2.35
       '@quilted/request-router': 0.2.0
-      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.0)
+      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.1)
       '@types/mime': 2.0.3
-      '@watching/tools': 0.2.0(typescript@5.3.2)
+      '@watching/tools': 0.2.0(typescript@5.3.3)
       ansi-escapes: 4.3.2
       arg: 5.0.2
       brotli-size: 4.0.0
@@ -3833,7 +3937,7 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@watching/clips-preact@0.2.1(@watching/clips@0.5.0)(preact@10.19.2):
+  /@watching/clips-preact@0.2.1(@watching/clips@0.5.0)(preact@10.19.3):
     resolution: {integrity: sha512-4xNKJZRi8NKzyhWekeNuBbwBvBm0RW67tD/hzSYP0RqPP4Am2HcXHMxhjF/0GRrNLHrOB+x/6z6HKOKZzcdpQA==}
     peerDependencies:
       '@watching/clips': ^0.5.0
@@ -3842,14 +3946,14 @@ packages:
       preact:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@lemonmade/remote-ui-preact': 0.4.1(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@preact/signals-core': 1.5.0
-      '@watching/clips': 0.5.0(preact@10.19.2)
-      preact: 10.19.2
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@lemonmade/remote-ui-preact': 0.4.1(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@preact/signals-core': 1.5.1
+      '@watching/clips': 0.5.0(preact@10.19.3)
+      preact: 10.19.3
     dev: true
 
-  /@watching/clips-react@0.4.0(@watching/clips@0.5.0)(preact@10.19.2)(react-dom@18.2.0)(react@18.2.0):
+  /@watching/clips-react@0.4.0(@watching/clips@0.5.0)(preact@10.19.3)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-yav3U88y8cZqjJjCM1jm4oftMaRWGqnH+PkKPSJe/5I+T3AcjR8mxES4hvdn9ACBm0WZ+xmlvoOG8s/c3w7gvQ==}
     peerDependencies:
       '@watching/clips': ^0.5.0
@@ -3861,19 +3965,19 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@lemonmade/remote-ui-react': 0.3.1(@preact/signals-core@1.5.0)(preact@10.19.2)(react@18.2.0)
-      '@preact/signals-core': 1.5.0
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@lemonmade/remote-ui-react': 0.3.1(@preact/signals-core@1.5.1)(preact@10.19.3)(react@18.2.0)
+      '@preact/signals-core': 1.5.1
       '@types/react': 18.2.42
       '@types/react-dom': 18.2.4
-      '@watching/clips': 0.5.0(preact@10.19.2)
+      '@watching/clips': 0.5.0(preact@10.19.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
       - preact
     dev: true
 
-  /@watching/clips-svelte@0.2.0(@watching/clips@0.5.0)(preact@10.19.2)(svelte@3.59.1):
+  /@watching/clips-svelte@0.2.0(@watching/clips@0.5.0)(preact@10.19.3)(svelte@3.59.1):
     resolution: {integrity: sha512-hO2vqvVTUKhreBzBJOtqf/qdSgC8GaTHWu6twtc4xfcnjvNdfa15HQihGXTdUrJZ0TteLAiXpR07i+7mwlDG4Q==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -3883,27 +3987,27 @@ packages:
       svelte:
         optional: true
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@preact/signals-core': 1.5.0
-      '@watching/clips': 0.5.0(preact@10.19.2)
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@preact/signals-core': 1.5.1
+      '@watching/clips': 0.5.0(preact@10.19.3)
       svelte: 3.59.1
     transitivePeerDependencies:
       - preact
     dev: true
 
-  /@watching/clips@0.5.0(preact@10.19.2):
+  /@watching/clips@0.5.0(preact@10.19.3):
     resolution: {integrity: sha512-NOgia8DUsLlcCbGGNPBCMSFgNd56ruNFu6ieNHuaPZf7NLxOcmQjl0XtxLF7gyqWocuQs4jHXoaWkrmaRtyQ5w==}
     dependencies:
-      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.0)(preact@10.19.2)
-      '@preact/signals-core': 1.5.0
+      '@lemonmade/remote-ui': 0.3.3(@preact/signals-core@1.5.1)(preact@10.19.3)
+      '@preact/signals-core': 1.5.1
       '@quilted/graphql': 3.0.1
       '@quilted/localize': 0.2.0
-      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.0)
+      '@quilted/threads': 2.1.0(@preact/signals-core@1.5.1)
     transitivePeerDependencies:
       - preact
     dev: true
 
-  /@watching/tools@0.2.0(typescript@5.3.2):
+  /@watching/tools@0.2.0(typescript@5.3.3):
     resolution: {integrity: sha512-EXGz6sQmP1oWzT8JXEHcspYsboan6c8y8nSFXuvXY9VLk32lHzsFc/uyJZ0IpA7nYu6hvXOT+UotU2J8a+QoqA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -3914,7 +4018,7 @@ packages:
     dependencies:
       '@iarna/toml': 3.0.0
       '@quilted/events': 2.0.0
-      '@quilted/graphql-tools': 0.2.0(typescript@5.3.2)
+      '@quilted/graphql-tools': 0.2.0(typescript@5.3.3)
       '@rollup/plugin-commonjs': 25.0.7(rollup@4.6.1)
       '@rollup/plugin-node-resolve': 15.2.3(rollup@4.6.1)
       '@rollup/plugin-replace': 5.0.5(rollup@4.6.1)
@@ -4150,7 +4254,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001566
-      electron-to-chromium: 1.4.605
+      electron-to-chromium: 1.4.609
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
     dev: true
@@ -4390,7 +4494,7 @@ packages:
       '@iarna/toml': 2.2.5
     dev: true
 
-  /cosmiconfig@8.3.6(typescript@5.3.2):
+  /cosmiconfig@8.3.6(typescript@5.3.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -4403,7 +4507,7 @@ packages:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      typescript: 5.3.2
+      typescript: 5.3.3
     dev: true
 
   /cron-schedule@3.0.6:
@@ -4441,8 +4545,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /csstype@3.1.2:
-    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+  /csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
     dev: true
 
   /data-uri-to-buffer@3.0.1:
@@ -4620,8 +4724,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium@1.4.605:
-    resolution: {integrity: sha512-V52j+P5z6cdRqTjPR/bYNxx7ETCHIkm5VIGuyCy3CMrfSnbEpIlLnk5oHmZo7gYvDfh2TfHeanB6rawyQ23ktg==}
+  /electron-to-chromium@1.4.609:
+    resolution: {integrity: sha512-ihiCP7PJmjoGNuLpl7TjNA8pCQWu09vGyjlPYw1Rqww4gvNuCcmvl+44G+2QyJ6S2K4o+wbTS++Xz0YN8Q9ERw==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -5932,17 +6036,17 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /preact-render-to-string@6.3.1(preact@10.19.2):
+  /preact-render-to-string@6.3.1(preact@10.19.3):
     resolution: {integrity: sha512-NQ28WrjLtWY6lKDlTxnFpKHZdpjfF+oE6V4tZ0rTrunHrtZp6Dm0oFrcJalt/5PNeqJz4j1DuZDS0Y6rCBoqDA==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.19.2
+      preact: 10.19.3
       pretty-format: 3.8.0
     dev: true
 
-  /preact@10.19.2:
-    resolution: {integrity: sha512-UA9DX/OJwv6YwP9Vn7Ti/vF80XL+YA5H2l7BpCtUr3ya8LWHFzpiO5R+N7dN16ujpIxhekRFuOOF82bXX7K/lg==}
+  /preact@10.19.3:
+    resolution: {integrity: sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==}
     dev: true
 
   /prettier@2.8.8:
@@ -6182,7 +6286,7 @@ packages:
       rollup-plugin-inject: 3.0.2
     dev: true
 
-  /rollup-plugin-svelte@7.1.5(rollup@4.6.1)(svelte@3.59.1):
+  /rollup-plugin-svelte@7.1.5(rollup@4.7.0)(svelte@3.59.1):
     resolution: {integrity: sha512-TXdtwPW/0wifaQvFf9SG36xbJYi8ok1AcSZe21u0vKcVrfc3JB7NOhwSWa9bQC3ltnBNsmNdga8bHqcnezzEug==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -6191,7 +6295,7 @@ packages:
     dependencies:
       '@rollup/pluginutils': 4.2.1
       resolve.exports: 2.0.2
-      rollup: 4.6.1
+      rollup: 4.7.0
       svelte: 3.59.1
     dev: true
 
@@ -6235,6 +6339,27 @@ packages:
       '@rollup/rollup-win32-arm64-msvc': 4.6.1
       '@rollup/rollup-win32-ia32-msvc': 4.6.1
       '@rollup/rollup-win32-x64-msvc': 4.6.1
+      fsevents: 2.3.3
+    dev: true
+
+  /rollup@4.7.0:
+    resolution: {integrity: sha512-7Kw0dUP4BWH78zaZCqF1rPyQ8D5DSU6URG45v1dqS/faNsx9WXyess00uTOZxKr7oR/4TOjO1CPudT8L1UsEgw==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.7.0
+      '@rollup/rollup-android-arm64': 4.7.0
+      '@rollup/rollup-darwin-arm64': 4.7.0
+      '@rollup/rollup-darwin-x64': 4.7.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.7.0
+      '@rollup/rollup-linux-arm64-gnu': 4.7.0
+      '@rollup/rollup-linux-arm64-musl': 4.7.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.7.0
+      '@rollup/rollup-linux-x64-gnu': 4.7.0
+      '@rollup/rollup-linux-x64-musl': 4.7.0
+      '@rollup/rollup-win32-arm64-msvc': 4.7.0
+      '@rollup/rollup-win32-ia32-msvc': 4.7.0
+      '@rollup/rollup-win32-x64-msvc': 4.7.0
       fsevents: 2.3.3
     dev: true
 
@@ -6531,7 +6656,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-preprocess@5.0.4(@babel/core@7.23.5)(svelte@3.59.1)(typescript@5.3.2):
+  /svelte-preprocess@5.0.4(@babel/core@7.23.5)(svelte@3.59.1)(typescript@5.3.3):
     resolution: {integrity: sha512-ABia2QegosxOGsVlsSBJvoWeXy1wUKSfF7SWJdTjLAbx/Y3SrVevvvbFNQqrSJw89+lNSsM58SipmZJ5SRi5iw==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
@@ -6576,7 +6701,7 @@ packages:
       sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.59.1
-      typescript: 5.3.2
+      typescript: 5.3.3
     dev: true
 
   /svelte@3.59.1:
@@ -6653,8 +6778,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript@5.3.2:
-    resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==}
+  /typescript@5.3.3:
+    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
