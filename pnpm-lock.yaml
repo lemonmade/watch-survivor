@@ -140,8 +140,8 @@ importers:
         specifier: ^0.5.2
         version: 0.5.2(preact@10.19.5)
       '@watching/clips-preact':
-        specifier: ^0.2.3
-        version: 0.2.3(@preact/signals@1.2.2)(@watching/clips@0.5.2)(preact@10.19.5)
+        specifier: ^0.2.4
+        version: 0.2.4(@preact/signals@1.2.2)(@watching/clips@0.5.2)(preact@10.19.5)
       preact:
         specifier: ^10.19.5
         version: 10.19.5
@@ -158,8 +158,8 @@ importers:
         specifier: ^0.5.2
         version: 0.5.2(preact@10.19.5)
       '@watching/clips-react':
-        specifier: ^0.4.2
-        version: 0.4.2(@watching/clips@0.5.2)(preact@10.19.5)(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^0.4.3
+        version: 0.4.3(@watching/clips@0.5.2)(preact@10.19.5)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -3550,8 +3550,8 @@ packages:
       preact: 10.19.5
     dev: true
 
-  /@remote-dom/react@0.1.1(@preact/signals-core@1.5.1)(preact@10.19.5)(react@18.2.0):
-    resolution: {integrity: sha512-4H0E79DgkbdDwXGtRvJuHVCEJL+t3A/DC+qk6VSa1Akx6Gw3s6bj4Z2iEM0LsRYi24/wYONH2rK3/xNgCQ0FYQ==}
+  /@remote-dom/react@0.1.3(@preact/signals-core@1.5.1)(preact@10.19.5)(react@18.2.0):
+    resolution: {integrity: sha512-wDrAV32RozCDtSkHVv4cQpcKDDl32fKuduVgjYm+bcv82NvEOJfBDk27IasluGJFhNLrPyYocCfUlE4eCDzdQQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
@@ -4156,8 +4156,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@watching/clips-preact@0.2.3(@preact/signals@1.2.2)(@watching/clips@0.5.2)(preact@10.19.5):
-    resolution: {integrity: sha512-av7YTCBDkKQf6R479tV48Q7NW3SubR8LdKKnv4SEJBPFMZw3GMrGpw2NyaU6mPIem25c/BcVhHerO5itbA/ILw==}
+  /@watching/clips-preact@0.2.4(@preact/signals@1.2.2)(@watching/clips@0.5.2)(preact@10.19.5):
+    resolution: {integrity: sha512-ynecgp0mwNCtWEDQXl4+TWujDQCAnZFvHSKRkhyXWW3UQJvCvWjSuR9xIat4qgg50Lo6uzspd5IBpsH/aaWdNQ==}
     peerDependencies:
       '@watching/clips': ^0.5.2
       preact: ^10.14.0
@@ -4174,8 +4174,8 @@ packages:
       - '@preact/signals'
     dev: true
 
-  /@watching/clips-react@0.4.2(@watching/clips@0.5.2)(preact@10.19.5)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-LlU2E75jKvRjnLdjUYfUUh3NGQdtfGdJ9q8RYyncIQN/NBaIwVNxKdgEPYUG3qEoSQ4CBpjkv9RIEF2uueFu/g==}
+  /@watching/clips-react@0.4.3(@watching/clips@0.5.2)(preact@10.19.5)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-QB+YVgafoaTeiVho1Iso33ETxJQ8y9WknZkd5SsqgDlzSWYJXnunu6+x9KFaVpfDmtCAA7fQykur9Pg8qcN7xw==}
     peerDependencies:
       '@watching/clips': ^0.5.2
       react: ^18.0.0
@@ -4188,7 +4188,7 @@ packages:
     dependencies:
       '@preact/signals-core': 1.5.1
       '@remote-dom/core': 0.1.1(@preact/signals-core@1.5.1)(preact@10.19.5)
-      '@remote-dom/react': 0.1.1(@preact/signals-core@1.5.1)(preact@10.19.5)(react@18.2.0)
+      '@remote-dom/react': 0.1.3(@preact/signals-core@1.5.1)(preact@10.19.5)(react@18.2.0)
       '@types/react': 18.2.56
       '@types/react-dom': 18.2.4
       '@watching/clips': 0.5.2(preact@10.19.5)
@@ -4474,7 +4474,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001587
+      caniuse-lite: 1.0.30001588
       electron-to-chromium: 1.4.673
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -4538,13 +4538,13 @@ packages:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001587
+      caniuse-lite: 1.0.30001588
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
 
-  /caniuse-lite@1.0.30001587:
-    resolution: {integrity: sha512-HMFNotUmLXn71BQxg8cijvqxnIAofforZOwGsxyXJ0qugTdspUF4sPSJ2vhgprHCB996tIDzEq1ubumPDV8ULA==}
+  /caniuse-lite@1.0.30001588:
+    resolution: {integrity: sha512-+hVY9jE44uKLkH0SrUTqxjxqNTOWHsbnQDIKjwkZ3lNTzUUVdBLBGXtj/q5Mp5u98r3droaZAewQuEDzjQdZlQ==}
     dev: true
 
   /chai@4.3.10:
