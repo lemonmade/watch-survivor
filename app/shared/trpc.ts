@@ -1,5 +1,6 @@
 import {type TRPCClient} from '@trpc/client';
 import {createTRPCReact, type CreateTRPCReact} from '@trpc/react-query';
+import type {QueryClient} from '@tanstack/react-query';
 
 // Get access to our app’s router type signature, which will
 // provide strong typing on the queries and mutations we can
@@ -11,6 +12,7 @@ export const trpc: CreateTRPCReact<AppRouter, unknown, null> =
 
 declare module '~/shared/context.ts' {
   interface AppContext {
-    trpc: TRPCClient<AppRouter>;
+    readonly trpc: TRPCClient<AppRouter>;
+    readonly queryClient: QueryClient;
   }
 }

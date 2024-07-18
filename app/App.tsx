@@ -1,10 +1,7 @@
-import {useMemo, type PropsWithChildren} from 'react';
+import {type RenderableProps} from 'preact';
 
-import {Routing, useRoutes} from '@quilted/quilt/navigate';
-import {Localization} from '@quilted/quilt/localize';
-import {HTML} from '@quilted/quilt/html';
-import {PerformanceContext} from '@quilted/quilt/performance';
-import {QueryClient} from '@tanstack/react-query';
+import {Navigation, route} from '@quilted/quilt/navigate';
+import {NotFound} from '@quilted/quilt/server';
 import {ReactQueryContext} from '@quilted/react-query';
 
 import {trpc} from '~/shared/trpc.ts';
@@ -13,50 +10,49 @@ import {
   type AppContext as AppContextType,
 } from '~/shared/context.ts';
 
-import {Http} from './foundation/Http.tsx';
-import {Head} from './foundation/Head.tsx';
+import {HTML} from './foundation/html.ts';
+import {Frame} from './foundation/frame.ts';
 
-import {Start} from './features/Start.tsx';
+import {Home} from './features/home.ts';
 
-export interface Props extends AppContextType {}
+export interface AppProps {
+  context: AppContextType;
+}
+
+// Define the routes for your application. If you have a lot of routes, you
+// might want to split this into a separate file.
+const routes = [
+  route('*', {
+    render: (children) => <Frame>{children}</Frame>,
+    children: [
+      route('/', {render: <Home />}),
+      route('*', {render: <NotFound />}),
+    ],
+  }),
+];
 
 // The root component for your application. You will typically render any
 // app-wide context in this component.
-export default function App(props: Props) {
+export function App({context}: AppProps) {
   return (
-    <PerformanceContext>
+    <AppContext context={context}>
       <HTML>
-        <Localization locale="en-CA">
-          <Routing>
-            <AppContext {...props}>
-              <Http />
-              <Head />
-              <Routes />
-            </AppContext>
-          </Routing>
-        </Localization>
+        <Navigation routes={routes} context={context} />
       </HTML>
-    </PerformanceContext>
+    </AppContext>
   );
 }
 
-// This component renders the routes for your application. If you have a lot
-// of routes, you may want to split this component into its own file.
-function Routes() {
-  return useRoutes([{match: '/', render: <Start />}]);
-}
+export default App;
 
 // This component renders any app-wide context.
-function AppContext({
-  children,
-  ...appContext
-}: PropsWithChildren<AppContextType>) {
-  const queryClient = useMemo(() => new QueryClient(), []);
-
+function AppContext({children, context}: RenderableProps<AppProps>) {
   return (
-    <AppContextReact.Provider value={appContext}>
-      <trpc.Provider client={appContext.trpc} queryClient={queryClient}>
-        <ReactQueryContext client={queryClient}>{children}</ReactQueryContext>
+    <AppContextReact.Provider value={context}>
+      <trpc.Provider client={context.trpc} queryClient={context.queryClient}>
+        <ReactQueryContext client={context.queryClient}>
+          {children}
+        </ReactQueryContext>
       </trpc.Provider>
     </AppContextReact.Provider>
   );

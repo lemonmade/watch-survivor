@@ -1,8 +1,8 @@
-import {type Configuration} from '@quilted/craft/graphql';
+import type {Configuration} from '@quilted/graphql-tools/configuration';
 import {extensionGraphQLProjects} from '@watching/cli/tools/graphql';
 
-const configuration: Configuration = {
+const configuration = {
   projects: extensionGraphQLProjects(),
-};
+} satisfies Configuration;
 
 export default configuration;

@@ -1,19 +1,39 @@
-import Env from '@quilted/quilt/env';
-import {useCurrentUrl} from '@quilted/quilt/navigate';
+import type {RenderableProps} from 'preact';
+import Env from 'quilt:module/env';
+import {Title, Favicon, useBrowserRequest} from '@quilted/quilt/browser';
 import {
   CacheControl,
   ResponseHeader,
   ContentSecurityPolicy,
   PermissionsPolicy,
+  SearchRobots,
   StrictTransportSecurity,
-} from '@quilted/quilt/http';
+  Viewport,
+} from '@quilted/quilt/server';
 
-export function Http() {
-  const isHttps = useCurrentUrl().protocol === 'https:';
+// This component sets details of the HTML page. If you need to customize
+// any of these details based on conditions like the active route, or some
+// state about the user, you can move these components to wherever in your
+// application you can read that state.
+//
+// @see https://github.com/lemonmade/quilt/blob/main/documentation/features/html.md
+export function HTML({children}: RenderableProps<{}>) {
+  return (
+    <>
+      <Headers />
+      <Head />
+      {children}
+    </>
+  );
+}
+
+function Headers() {
+  const {url} = useBrowserRequest();
+  const isHttps = new URL(url).protocol === 'https:';
 
   return (
     <>
-      {/**
+      {/*
        * Disables the cache for this page, which is generally the best option
        * when dealing with authenticated content. If your site doesn’t have
        * authentication, or you have a better cache policy that works for your
@@ -23,7 +43,7 @@ export function Http() {
        */}
       <CacheControl cache={false} />
 
-      {/**
+      {/*
        * Sets a strict content security policy for this page. If you load
        * assets from other origins, or want to allow some more dangerous
        * resource loading techniques like `eval`, you can change the
@@ -36,6 +56,12 @@ export function Http() {
         reportOnly={Env.MODE === 'development'}
         // By default, only allow sources from the page’s origin.
         defaultSources={["'self'"]}
+        // In development, allow connections to local websockets for hot reloading.
+        connectSources={
+          Env.MODE === 'development'
+            ? ["'self'", `${isHttps ? 'ws' : 'wss'}://localhost:*`]
+            : undefined
+        }
         // Includes `'unsafe-inline'` because CSS is often necessary in development,
         // and can be difficult to avoid in production.
         styleSources={["'self'", "'unsafe-inline'"]}
@@ -50,7 +76,7 @@ export function Http() {
         upgradeInsecureRequests={isHttps}
       />
 
-      {/**
+      {/*
        * Sets a strict permissions policy for this page, which limits access
        * to some native browser features.
        *
@@ -73,7 +99,7 @@ export function Http() {
         geolocation={false}
       />
 
-      {/**
+      {/*
        * Instructs browsers to only load this page over HTTPS using the
        * `Strict-Transport-Security` header.
        *
@@ -81,7 +107,7 @@ export function Http() {
        */}
       {isHttps && <StrictTransportSecurity />}
 
-      {/**
+      {/*
        * Controls how much information about the current page is included in
        * requests (through the `Referer` header). The default value
        * (strict-origin-when-cross-origin) means that only the origin is included
@@ -95,12 +121,39 @@ export function Http() {
         value="strict-origin-when-cross-origin"
       />
 
-      {/**
+      {/*
        * Instructs browsers to respect the MIME type in the `Content-Type` header.
        *
        * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
        */}
       <ResponseHeader name="X-Content-Type-Options" value="nosniff" />
+    </>
+  );
+}
+
+function Head() {
+  return (
+    <>
+      {/* Sets the default `<title>` for this application. */}
+      <Title>App</Title>
+
+      {/*
+       * Sets the default favicon used by the application. You can
+       * change this to a different emoji, make it `blank`, or pass
+       * a URL with the `source` prop.
+       */}
+      <Favicon emoji="🧶" />
+
+      {/* Adds a responsive-friendly `viewport` `<meta>` tag. */}
+      <Viewport cover />
+
+      {/*
+       * Disables all search indexing for this application. If you are
+       * building an unauthenticated app, you probably want to remove
+       * this component, or update it to control how your site is indexed
+       * by search engines.
+       */}
+      <SearchRobots index={false} follow={false} />
     </>
   );
 }

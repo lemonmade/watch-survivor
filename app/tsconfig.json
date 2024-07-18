@@ -1,12 +1,15 @@
 {
-  "extends": "@quilted/typescript/project.json",
+  "extends": "@quilted/typescript/tsconfig.project.json",
   "compilerOptions": {
-    "outDir": "build/typescript",
+    "jsxImportSource": "preact",
     "paths": {
-      "~/shared/*": ["./shared/*"]
+      "~/shared/*": ["./shared/*"],
+      "~/tests/*": ["./tests/*"],
+      "react": ["./node_modules/preact/compat"],
+      "react-dom": ["./node_modules/preact/compat"]
     }
   },
   "include": ["**/*"],
-  "exclude": ["*.test.ts", "*.test.tsx", "build"],
+  "exclude": ["build"],
   "references": []
 }

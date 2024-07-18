@@ -1,9 +1,6 @@
 {
-  "extends": "@quilted/typescript/workspace.json",
-  "include": ["graphql.config.ts", "quilt.workspace.ts", "**/quilt.project.ts"],
-  "compilerOptions": {
-    "outDir": "build/typescript/workspace"
-  },
+  "extends": "@quilted/typescript/tsconfig.workspace.json",
+  "include": ["graphql.config.ts"],
   "references": [
     {"path": "./app"},
     {"path": "./extensions/DomExample"},

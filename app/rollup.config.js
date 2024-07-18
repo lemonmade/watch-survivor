@@ -1,4 +1,4 @@
-import {quiltApp} from '@quilted/craft/rollup';
+import {quiltApp} from '@quilted/rollup/app';
 import {cloudflarePages} from '@quilted/cloudflare/craft';
 
 const configuration = await quiltApp({

@@ -1,12 +1,9 @@
 {
-  "extends": "@quilted/typescript/project.json",
+  "extends": "@quilted/typescript/tsconfig.project.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "outDir": "build/typescript"
+    "jsxImportSource": "preact"
   },
   "include": ["**/*"],
-  "exclude": ["./build", "./quilt.project.ts"]
+  "exclude": ["./build"]
 }

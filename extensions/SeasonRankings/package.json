@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
-    "@watching/clips": "^0.5.2",
-    "@watching/clips-preact": "^0.2.4",
-    "preact": "^10.19.5"
+    "@watching/clips": "^0.5.3",
+    "@watching/clips-preact": "^0.2.5",
+    "preact": "^10.22.1"
   }
 }
