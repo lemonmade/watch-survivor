@@ -3,7 +3,7 @@ import '@quilted/quilt/globals';
 import {renderToResponse} from '@quilted/quilt/server';
 import {RequestRouter} from '@quilted/quilt/request-router';
 import {createDirectClient} from '@quilted/trpc/server';
-import {Router} from '@quilted/quilt/navigate';
+import {Router} from '@quilted/quilt/navigation';
 
 import {QueryClient} from '@tanstack/react-query';
 import {fetchRequestHandler} from '@trpc/server/adapters/fetch';

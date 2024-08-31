@@ -1,6 +1,6 @@
 import {type RenderableProps} from 'preact';
 
-import {Navigation, route} from '@quilted/quilt/navigate';
+import {Navigation, route} from '@quilted/quilt/navigation';
 import {NotFound} from '@quilted/quilt/server';
 import {ReactQueryContext} from '@quilted/react-query';
 
