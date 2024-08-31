@@ -21,7 +21,7 @@ cloudflared tunnel run
 Then, run the development server, but with the `--proxy` argument set to the root proxy URL:
 
 ```sh
-pnpm develop --proxy https://watch-survivor.dev-proxy.me
+pnpm exec watchapp --proxy https://watch-survivor.dev-proxy.me
 ```
 
 To run the extension against a locally-running version of the Watch application, run the `pnpm develop` command with the `WATCH_ROOT_URL` environment variable:
