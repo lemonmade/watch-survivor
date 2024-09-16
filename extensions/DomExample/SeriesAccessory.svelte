@@ -26,7 +26,7 @@
 
   <ui-action>
     Modal
-    <ui-modal padding slot="overlay">
+    <ui-modal padding="auto" slot="overlay">
       Count: {count}
     </ui-modal>
   </ui-action>

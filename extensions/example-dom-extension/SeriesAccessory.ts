@@ -8,7 +8,7 @@ export default extension<'series.details.accessory', SeriesQueryData>(
   async (root, {query, mutate, target}) => {
     const {series} = getQuery<SeriesQueryData>(query);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     const seriesNameText = document.createTextNode(series.name);
 
@@ -36,13 +36,29 @@ export default extension<'series.details.accessory', SeriesQueryData>(
 
     const action = document.createElement('ui-action');
     action.textContent = 'Start watch through!';
-    action.onPress = async () => {
-      await mutate(startWatchThroughMutation);
-    };
+    action.addEventListener('press', (event) => {
+      event.respondWith(mutate(startWatchThroughMutation));
+    });
+
+    const textField = document.createElement('ui-text-field');
+    textField.addEventListener('input', (event) => {
+      valueLabel.textContent = (event.target as any).value;
+      console.log('input', (event.target as any).value);
+    });
+
+    const label = document.createElement('ui-text');
+    label.textContent = 'Rating (';
+    label.slot = 'label';
+    textField.append(label);
+
+    const valueLabel = document.createElement('ui-text');
+    valueLabel.textContent = '';
+    valueLabel.emphasis = true;
+    label.append(valueLabel, ')');
 
     const stack = document.createElement('ui-stack');
-    stack.spacing = true;
-    stack.append(textBlock, action);
+    stack.setAttribute('spacing', 'auto');
+    stack.append(textBlock, action, textField);
 
     root.append(stack);
   },

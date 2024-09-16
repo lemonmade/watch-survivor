@@ -27,18 +27,24 @@ export function WinnerPick() {
   return (
     <BlockStack spacing>
       <TextField
-        changeTiming="input"
-        label={t('count.label', {
-          value: <Text emphasis>{resolvedValue}</Text>,
-        })}
-        value={value}
+        label={
+          <Text>
+            {t('count.label', {
+              value: <Text emphasis>{resolvedValue}</Text>,
+            })}
+          </Text>
+        }
+        value={value.peek()}
+        onInput={(newValue) => {
+          value.value = newValue;
+        }}
       />
       <BlockStack spacing="small">
         <Action
           disabled={useSignalValue(disabled)}
           overlay={
             <Popover inlineAttachment="start">
-              <View padding="base">Popover! {resolvedValue}</View>
+              <View padding>Popover! {resolvedValue}</View>
             </Popover>
           }
         >
