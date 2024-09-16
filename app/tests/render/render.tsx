@@ -27,7 +27,7 @@ export const renderApp = createRender<
     return {
       router,
       browser,
-      trpc: trpc.createClient(),
+      trpc: trpc.createClient({links: []}),
       queryClient: new QueryClient(),
     };
   },
