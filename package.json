@@ -6,6 +6,7 @@
   "author": "Chris Sauve <chrismsauve@gmail.com>",
   "scripts": {
     "build": "pnpm -r run build && watchapp build",
+    "watchapp:develop": "watchapp develop",
     "develop": "concurrently \"pnpm -r run develop\"",
     "format": "prettier --write --cache .",
     "lint": "prettier --check --cache .",
@@ -25,7 +26,7 @@
     "@quilted/vite": "^0.1.27",
     "@types/html-minifier-terser": "^7.0.0",
     "@types/react": "^18.3.3",
-    "@watching/cli": "^2.1.6",
+    "@watching/cli": "^2.2.0",
     "concurrently": "^8.2.2",
     "fast-glob": "^3.2.12",
     "fast-xml-parser": "^4.2.3",
@@ -39,7 +40,7 @@
     "typescript": "^5.5.3",
     "vite": "^5.3.4",
     "vitest": "^2.0.0",
-    "wrangler": "^3.65.0"
+    "wrangler": "^3.73.0"
   },
   "prettier": "@quilted/prettier",
   "browserslist": [
