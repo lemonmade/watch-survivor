@@ -34,9 +34,9 @@ export default extension<'series.details.accessory', SeriesQueryData>(
       '!',
     );
 
-    const action = document.createElement('ui-action');
-    action.textContent = 'Start watch through!';
-    action.addEventListener('press', (event) => {
+    const button = document.createElement('ui-button');
+    button.textContent = 'Start watch through!';
+    button.addEventListener('press', (event) => {
       event.respondWith(mutate(startWatchThroughMutation));
     });
 
@@ -58,7 +58,7 @@ export default extension<'series.details.accessory', SeriesQueryData>(
 
     const stack = document.createElement('ui-stack');
     stack.setAttribute('spacing', 'auto');
-    stack.append(textBlock, action, textField);
+    stack.append(textBlock, button, textField);
 
     root.append(stack);
   },

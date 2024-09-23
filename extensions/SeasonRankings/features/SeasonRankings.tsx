@@ -1,6 +1,6 @@
 import {
   Text,
-  Action,
+  Button,
   BlockStack,
   Modal,
   useSignal,
@@ -14,14 +14,14 @@ export function SeasonRankings() {
       <Text>
         Season rankings!!! (rendered at {new Date().toLocaleTimeString()})
       </Text>
-      <Action
+      <Button
         onPress={() => {
           count.value += 1;
         }}
       >
         Click me! {count.value}
-      </Action>
-      <Action overlay={<Modal padding>{count.value}</Modal>}>Modal</Action>
+      </Button>
+      <Button overlay={<Modal padding>{count.value}</Modal>}>Modal</Button>
     </BlockStack>
   );
 }

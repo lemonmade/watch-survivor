@@ -1,6 +1,6 @@
 import {
   BlockStack,
-  Action,
+  Button,
   View,
   TextField,
   Text,
@@ -40,7 +40,7 @@ export function WinnerPick() {
         }}
       />
       <BlockStack spacing="small">
-        <Action
+        <Button
           disabled={useSignalValue(disabled)}
           overlay={
             <Popover inlineAttachment="start">
@@ -49,13 +49,13 @@ export function WinnerPick() {
           }
         >
           {t('actions.other', {count: resolvedCount})}
-        </Action>
-        <Action
+        </Button>
+        <Button
           overlay={
             <Modal padding>
               <BlockStack spacing>
                 <View>Modal! {resolvedValue}</View>
-                <Action
+                <Button
                   onPress={async () => {
                     await new Promise<void>((resolve) => {
                       setTimeout(() => resolve(), 2_000);
@@ -65,20 +65,20 @@ export function WinnerPick() {
                   }}
                 >
                   {t('actions.modal')}
-                </Action>
+                </Button>
               </BlockStack>
             </Modal>
           }
         >
           {t('actions.showModal')}
-        </Action>
-        <Action
+        </Button>
+        <Button
           onPress={() => {
             count.value += 1;
           }}
         >
           {t('actions.increment', {count: resolvedCount})}
-        </Action>
+        </Button>
       </BlockStack>
 
       <ApiDebug />

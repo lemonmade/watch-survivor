@@ -20,14 +20,14 @@
     <ui-text emphasis="strong">{$query.series.name}</ui-text>!
   </ui-text-block>
 
-  <ui-action on:press={handlePress}>
+  <ui-button on:press={handlePress}>
     Click me (count: {count})
-  </ui-action>
+  </ui-button>
 
-  <ui-action>
+  <ui-button>
     Modal
     <ui-modal padding="auto" slot="overlay">
       Count: {count}
     </ui-modal>
-  </ui-action>
+  </ui-button>
 </ui-block-stack>
