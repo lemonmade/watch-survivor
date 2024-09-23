@@ -5,30 +5,23 @@
   "private": true,
   "scripts": {
     "build": "rollup --config ./rollup.config.js",
-    "deploy": "wrangler pages publish ./build/public --project-name watch-survivor",
+    "deploy": "wrangler pages deploy",
     "develop": "vite --config ./vite.config.js",
+    "develop:wrangler": "wrangler pages dev",
     "start": "node ./build/server/server.js"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240821.1",
     "@quilted/quilt": "^0.8.1",
-    "@quilted/react-query": "^0.4.3",
-    "@quilted/trpc": "^0.2.1",
-    "@tanstack/react-query": "^5.51.3",
-    "@trpc/client": "11.0.0-rc.502",
-    "@trpc/react-query": "11.0.0-rc.502",
-    "@trpc/server": "11.0.0-rc.502",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "preact": "^10.23.2",
+    "preact": "^10.24.0",
     "react": "npm:@quilted/react@^18.2.11",
     "react-dom": "npm:@quilted/react-dom@^18.2.14",
     "zod": "^3.23.8"
   },
   "browserslist": {
     "defaults": [
-      "defaults and not dead"
-    ],
-    "modules": [
       "defaults and fully supports es6-module-dynamic-import"
     ],
     "evergreen": [
@@ -37,5 +30,9 @@
       "last 1 firefox version",
       "last 1 edge version"
     ]
+  },
+  "dependencies": {
+    "drizzle-kit": "^0.24.2",
+    "drizzle-orm": "^0.33.0"
   }
 }
