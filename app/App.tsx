@@ -2,9 +2,7 @@ import {type RenderableProps} from 'preact';
 
 import {Navigation, route} from '@quilted/quilt/navigation';
 import {NotFound} from '@quilted/quilt/server';
-import {ReactQueryContext} from '@quilted/react-query';
 
-import {trpc} from '~/shared/trpc.ts';
 import {
   AppContextReact,
   type AppContext as AppContextType,
@@ -25,7 +23,10 @@ const routes = [
   route('*', {
     render: (children) => <Frame>{children}</Frame>,
     children: [
-      route('/', {render: <Home />}),
+      route('/', {
+        load: () => Promise.resolve({data: 'Hello World'}),
+        render: <Home />,
+      }),
       route('*', {render: <NotFound />}),
     ],
   }),
@@ -49,11 +50,7 @@ export default App;
 function AppContext({children, context}: RenderableProps<AppProps>) {
   return (
     <AppContextReact.Provider value={context}>
-      <trpc.Provider client={context.trpc} queryClient={context.queryClient}>
-        <ReactQueryContext client={context.queryClient}>
-          {children}
-        </ReactQueryContext>
-      </trpc.Provider>
+      {children}
     </AppContextReact.Provider>
   );
 }

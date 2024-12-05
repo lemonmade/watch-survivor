@@ -3,9 +3,6 @@ import {BrowserContext, BrowserTestMock} from '@quilted/quilt/browser/testing';
 import {Navigation, TestRouter} from '@quilted/quilt/navigation/testing';
 import {Localization} from '@quilted/quilt/localize';
 
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-
-import {trpc} from '~/shared/trpc.ts';
 import {AppContextReact} from '~/shared/context.ts';
 
 import {RenderOptions, RenderContext, RenderActions} from './types.ts';
@@ -27,25 +24,17 @@ export const renderApp = createRender<
     return {
       router,
       browser,
-      trpc: trpc.createClient({links: []}),
-      queryClient: new QueryClient(),
     };
   },
   // Render all of our app-wide context providers around each component under test.
   render(element, context, {locale = 'en'}) {
-    const {router, browser, trpc: trpcClient, queryClient} = context;
+    const {router, browser} = context;
 
     return (
       <AppContextReact.Provider value={context}>
         <BrowserContext browser={browser}>
           <Localization locale={locale}>
-            <Navigation router={router}>
-              <trpc.Provider client={trpcClient} queryClient={queryClient}>
-                <QueryClientProvider client={queryClient}>
-                  {element}
-                </QueryClientProvider>
-              </trpc.Provider>
-            </Navigation>
+            <Navigation router={router}>{element}</Navigation>
           </Localization>
         </BrowserContext>
       </AppContextReact.Provider>

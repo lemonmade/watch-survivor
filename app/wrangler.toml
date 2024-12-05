@@ -1,22 +1,13 @@
-name = "survivor-watch"
-zone_id = "e95e77aca78f37bec01a1473c5947e8d"
-route = "survivor.watch/*"
-workers_dev = true
-
-type = "javascript"
-
-[build]
-command = ""
-
-[build.upload]
-format = "modules"
-dir = "./build/server"
-main = "./index.mjs"
-
-[site]
-bucket = "./build/assets"
-entry-point = "."
+name = "watch-survivor"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "./build/public"
 
 [[kv_namespaces]]
 id = "e4ea0a087fac4d94900bf75c77aac795"
 binding = "SURVIVOR"
+
+[[d1_databases]]
+binding = "SURVIVOR_DB"
+database_name = "watch-survivor-db"
+database_id = "61507612-6042-4af0-9b86-7c343a73e9b9"
+# migrations_dir = "./drizzle/migrations"
