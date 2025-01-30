@@ -42,8 +42,8 @@ importers:
         specifier: ^18.3.3
         version: 18.3.3
       '@watching/cli':
-        specifier: ^2.2.2
-        version: 2.2.2(@preact/signals-core@1.8.0)(@watching/clips@0.6.3(preact@10.22.1))(typescript@5.5.3)
+        specifier: ^2.3.0
+        version: 2.3.0(@preact/signals-core@1.8.0)(@watching/clips@0.6.3(preact@10.22.1))(typescript@5.5.3)
       concurrently:
         specifier: ^8.2.2
         version: 8.2.2
@@ -2270,8 +2270,8 @@ packages:
   '@vitest/utils@2.0.5':
     resolution: {integrity: sha512-d8HKbqIcya+GR67mkZbrzhS5kKhtp8dQLcmRZLGTscGVg7yImT82cIrhtn2L8+VujWcy6KZweApgNmPsTAO/UQ==}
 
-  '@watching/cli@2.2.2':
-    resolution: {integrity: sha512-2xd22nG0VLRTXrFMmj4nXeKHEkCFIcl1i9tDd2UuBihm3qdKxDdB7KkbJDxtAxlh8aqt6eSgyFGp0srR5CN5YA==}
+  '@watching/cli@2.3.0':
+    resolution: {integrity: sha512-QGb0RqatfRTrGB4vyxu0Xbez6+wxvQcdQcQxW533mpP6jZ8Mz+qjH8FtoLPE/AHOA3WzTt5VglaUCyPRAA5m9A==}
     hasBin: true
     peerDependencies:
       '@watching/clips': ^0.6.3
@@ -6616,7 +6616,7 @@ snapshots:
       loupe: 3.1.1
       tinyrainbow: 1.2.0
 
-  '@watching/cli@2.2.2(@preact/signals-core@1.8.0)(@watching/clips@0.6.3(preact@10.22.1))(typescript@5.5.3)':
+  '@watching/cli@2.3.0(@preact/signals-core@1.8.0)(@watching/clips@0.6.3(preact@10.22.1))(typescript@5.5.3)':
     dependencies:
       '@lemonmade/graphql-live': 0.4.4(graphql@16.9.0)
       '@quilted/cli-kit': 0.1.12
